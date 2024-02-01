@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1706784835 "/home/felix/Documents/Studium/uni UAS/Masterarbeit/Paper/Conference-LaTeX-template_10-17-19/conference_101719.tex" "conference_101719.pdf" "conference_101719" 1706784835 0
+["pdflatex"] 1706787651 "/home/felix/Documents/Studium/uni UAS/Masterarbeit/Paper/Conference-LaTeX-template_10-17-19/conference_101719.tex" "conference_101719.pdf" "conference_101719" 1706787651 0
   "/home/felix/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1706784672 80168 62bdaf2d33bf232150a16ddb6ae1015a ""
   "/home/felix/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1695387377 20963136 68b46a18abca85778b13f268b90cf326 ""
   "/home/felix/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc" 1706784671 4993 1194fb36dfcb11d9ae9802f2b00b60a3 ""
@@ -82,11 +82,11 @@
   "/home/felix/.miktex/texmfs/install/tex/latex/psnfss/ot1pcr.fd" 1706784665 1025 cfb5a7799d4001859dd60898d37ec67c ""
   "/home/felix/.miktex/texmfs/install/tex/latex/psnfss/ot1ptm.fd" 1706784665 1007 39eda417ef5837ce5e38661cfad2cedf ""
   "/home/felix/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty" 1695126703 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "/home/felix/Documents/Studium/uni UAS/Masterarbeit/Paper/Conference-LaTeX-template_10-17-19/conference_101719.tex" 1706784833 15317 418fcc73a8072cf921dc73c69e091db9 ""
+  "/home/felix/Documents/Studium/uni UAS/Masterarbeit/Paper/Conference-LaTeX-template_10-17-19/conference_101719.tex" 1706787650 15302 ac171464de3cbd609db26597aa59ae37 ""
   "IEEEtran.cls" 1440632924 288304 b67b6fc6c2abb39f9b461923f5199343 ""
-  "conference_101719.aux" 1706784835 2374 ef9e8bef768166409b15f8515fbcbdd4 "pdflatex"
-  "conference_101719.tex" 1706784833 15317 418fcc73a8072cf921dc73c69e091db9 ""
-  "fig1.png" 1571299972 4535 3b4c70b1b9361fad686e8d234c8fe506 ""
+  "Pictures/fig1.png" 1571299972 4535 3b4c70b1b9361fad686e8d234c8fe506 ""
+  "conference_101719.aux" 1706787651 2374 ef9e8bef768166409b15f8515fbcbdd4 "pdflatex"
+  "conference_101719.tex" 1706787650 15302 ac171464de3cbd609db26597aa59ae37 ""
   (generated)
   "conference_101719.aux"
   "conference_101719.log"
