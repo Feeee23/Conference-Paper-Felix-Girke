@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.9.22)  8 FEB 2024 14:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.9.22)  8 FEB 2024 16:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -296,58 +296,89 @@ Package pdftex.def Info: Pictures/dataConectorStructure.pdf  used on input line 
 [1{/home/felix/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map}{/home/felix/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}
 
 
- <./Pictures/dataConectorStructure.pdf>] [2]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 157.
+ <./Pictures/dataConectorStructure.pdf>]
+<Pictures/KortexAPISpeed.pdf, id=19, 462.52798pt x 346.89601pt>
+File: Pictures/KortexAPISpeed.pdf Graphic file (type pdf)
+<use Pictures/KortexAPISpeed.pdf>
+Package pdftex.def Info: Pictures/KortexAPISpeed.pdf  used on input line 105.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+<Pictures/OPCUASpeed1D.pdf, id=20, 462.52798pt x 346.89601pt>
+File: Pictures/OPCUASpeed1D.pdf Graphic file (type pdf)
+<use Pictures/OPCUASpeed1D.pdf>
+Package pdftex.def Info: Pictures/OPCUASpeed1D.pdf  used on input line 118.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+<Pictures/PingDiagram.pdf, id=21, 462.52798pt x 346.89601pt>
+File: Pictures/PingDiagram.pdf Graphic file (type pdf)
+<use Pictures/PingDiagram.pdf>
+Package pdftex.def Info: Pictures/PingDiagram.pdf  used on input line 127.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+<Pictures/OPCUAMultipleDatenAufEinmal.pdf, id=22, 462.52798pt x 346.89601pt>
+File: Pictures/OPCUAMultipleDatenAufEinmal.pdf Graphic file (type pdf)
+<use Pictures/OPCUAMultipleDatenAufEinmal.pdf>
+Package pdftex.def Info: Pictures/OPCUAMultipleDatenAufEinmal.pdf  used on input line 133.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+ [2 <./Pictures/KortexAPISpeed.pdf> <./Pictures/OPCUASpeed1D.pdf> <./Pictures/PingDiagram.pdf> <./Pictures/OPCUAMultipleDatenAufEinmal.pdf>] [3]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 197.
  (/home/felix/.miktex/texmfs/install/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 162--165
+Underfull \hbox (badness 10000) in paragraph at lines 202--205
 \OT1/ptm/m/n/10 Use []\OT1/pcr/m/n/10 {align} \OT1/ptm/m/n/10 or []\OT1/pcr/m/n/10 {IEEEeqnarray} \OT1/ptm/m/n/10 instead. The
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 196--197
+Underfull \hbox (badness 1454) in paragraph at lines 236--237
 []\OT1/ptm/m/n/10 In American English, commas, semicolons, periods,
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 196--197
+Underfull \hbox (badness 1609) in paragraph at lines 236--237
 \OT1/ptm/m/n/10 question and exclamation marks are located within
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 []\OT1/ptm/m/n/10 Do not use the word ``essentially'' to mean
  []
 
 
-Underfull \hbox (badness 4181) in paragraph at lines 204--205
+Underfull \hbox (badness 4181) in paragraph at lines 244--245
 []\OT1/ptm/m/n/10 The abbreviation ``i.e.'' means ``that is'', and the
  []
 
-<Pictures/fig1.png, id=25, 82.1469pt x 71.5473pt>
+<Pictures/fig1.png, id=164, 82.1469pt x 71.5473pt>
 File: Pictures/fig1.png Graphic file (type png)
 <use Pictures/fig1.png>
-Package pdftex.def Info: Pictures/fig1.png  used on input line 262.
+Package pdftex.def Info: Pictures/fig1.png  used on input line 302.
 (pdftex.def)             Requested size: 82.14668pt x 71.5471pt.
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 273.
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 313.
 (/home/felix/.miktex/texmfs/install/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 273.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 313.
 
-Underfull \hbox (badness 1502) in paragraph at lines 267--276
+Underfull \hbox (badness 1502) in paragraph at lines 307--316
 \OT1/ptm/m/n/10 labels. Use words rather than symbols or abbreviations
  []
 
-[3]
-Underfull \hbox (badness 1845) in paragraph at lines 313--314
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
+[]\OT1/ptm/m/n/8 Kinova, Kortex TransportClient classes,
+ []
+
+
+Overfull \hbox (112.15634pt too wide) in paragraph at lines 347--348
+\OT1/ptm/m/n/8 https://docs.kinovarobotics.com/kortex/linked[]md/cpp[]transport[]router[]session[]notif.html#transportclient-
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 354--355
 []\OT1/ptm/m/n/8 M. Young, The Technical Writer's Handbook. Mill Valley, CA:
  []
 
 
-Underfull \hbox (badness 5924) in paragraph at lines 317--318
+Underfull \hbox (badness 5924) in paragraph at lines 358--359
 \OT1/ptm/m/n/10 IEEE conference templates contain guidance text for
  []
 
@@ -362,24 +393,24 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4 <./Pictures/fig1.png (PNG copy)>] (conference_101719.aux)
+[5 <./Pictures/fig1.png (PNG copy)>] (conference_101719.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4294 strings out of 477183
- 66986 string characters out of 5809538
+ 4328 strings out of 477183
+ 68203 string characters out of 5809538
  1937807 words of memory out of 5000000
- 25530 multiletter control sequences out of 15000+600000
+ 25564 multiletter control sequences out of 15000+600000
  606003 words of font info for 129 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  57i,11n,65p,686b,306s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmb8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmbi8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (4 pages, 157557 bytes).
+Output written on conference_101719.pdf (5 pages, 207010 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
+ 221 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

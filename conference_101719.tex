@@ -93,12 +93,52 @@ This increases the flexibility of the data connector.
 % batterie soc
 % digialen zwilling vor dem kauf durch den Server simulation
 \section{Performance Tests}
-
+To ensure the data doesn't take to long from the robot to a client a series of performance tests are conducted.
+These can be separate in two parts. 
+First getting the data from the robot to the data connector and second get the data from the data connector to the client.
+Every test is made with 5 samples. Every sample is the average speed of the first 1000 data requests.
 \subsection{Getting data from the robot}
+The Raspberry Pi 3B+ is directly connected to the Kinova robot via a ethernet cable.
+With UDP as communication standard the Raspberry Pi can get the up to 1400 datasets per second from the Kinova robot (Fig. \ref{fig:KortexAPISpeed}).
+That is even more than the 1000 datasets per second, that Kinova claims \cite{KortexUDP}.
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=8cm]{Pictures/KortexAPISpeed.pdf}}
+    \caption{Frequency with which the Raspberry Pi 3B+ can get data from the Kinova arm}
+    \label{fig:KortexAPISpeed}
+\end{figure}
+A dataset consists of all the data the robot has to offer. Thats over 50 data points.
+Is the OPC-UA server is running parallel on the Raspberry Pi the frequency is lower, around 1kHz.
+If one client is simultaneously requesting data from the OPC-UA server the frequency isn't really affected.
+But if there are more clients then the frequency begins to drop slowly.
+\subsection{Getting Data from the data connector}
+To get the data from the data connector two different PCs are used. One midrange Laptop (Intel 11.Gen Core i7-1165G7, Realtek Semiconductor
+RTL8152 Fast Ethernet Adapter) and an high end Tower PC (Intel 13.Gen Core i9-13900KF, Realtek Gaming R2.5GbE Family Controller).
+The PCs and the data connector are all connected to a Router (tp-link Archer C80 AC1900 MU-MiMO).\\
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=8cm]{Pictures/OPCUASpeed1D.pdf}}
+    \caption{Frequency with which data can be requested from the OPC-UA server}
+    \label{fig:OPCUASpeed1D}
+\end{figure}
+In Fig. \ref{fig:OPCUASpeed1D} different libraries are used for the client to request one Value from the data connector.
+On the Laptop the c-library open62541 is faster than the python library freeopcua.
+On the Tower PC the python library is even faster than the c library on the Laptop.
+If these results are compared to the ping between these PCs and the data connector (Fig. \ref{fig:PingDiagram}) it can be concluded that the python library on the Tower PC is running close to the actual limit of the network.\\
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=8cm]{Pictures/PingDiagram.pdf}}
+    \caption{Ping to the data connector}
+    \label{fig:PingDiagram}
+\end{figure}
+If multiple clients are started in parallel on the Tower PC there is a slight decrease in the frequency with which the data can be requested from the data connector (Fig. \ref{fig:OPCUASpeed1D}).
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=8cm]{Pictures/OPCUAMultipleDatenAufEinmal.pdf}}
+    \caption{Frequency with which different datasets can be requested from the OPC-UA server}
+    \label{fig:OPCUAMultipleDatenAufEinmal}
+\end{figure}
+In the last test (Fig. \ref{fig:OPCUAMultipleDatenAufEinmal}) datasets with different amounts of values are requested from the data connector via the Tower PC using the python library.
 
-\subsection{Getting Data from the OPC-UA Server}
 \section{Digital twin}
 \section{Remote access}
+\newpage
 \newpage
 \section{Ease of Use}
 
@@ -304,6 +344,7 @@ citation first, followed by the original foreign-language citation \cite{b6}.
 
 \begin{thebibliography}{00}
 \bibitem{OPCUA}https://opcfoundation.org/about/opc-technologies/opc-ua/
+\bibitem{KortexUDP} Kinova, Kortex TransportClient classes, https://docs.kinovarobotics.com/kortex/linked\_md/cpp\_transport\_router\_session\_notif.html\#transportclient-classes, last checked 08.02.2024
 \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
 \bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
 \bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
