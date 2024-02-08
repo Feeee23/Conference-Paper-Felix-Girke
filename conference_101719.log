@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.9.22)  1 FEB 2024 12:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.9.22)  8 FEB 2024 14:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -271,70 +271,89 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/home/felix/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
  (/home/felix/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
  (/home/felix/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 57.
- [1{/home/felix/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map}{/home/felix/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 39.
+
+Underfull \hbox (badness 1845) in paragraph at lines 64--67
+[]\OT1/ptm/m/n/10 was ist opcua? [1] warum opcua sprich semantische
+ []
 
 
-]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 127.
+
+pdfTeX warning: pdflatex (file ./Pictures/dataConectorStructure.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Pictures/dataConectorStructure.pdf, id=1, 231.74579pt x 111.29579pt>
+File: Pictures/dataConectorStructure.pdf Graphic file (type pdf)
+<use Pictures/dataConectorStructure.pdf>
+Package pdftex.def Info: Pictures/dataConectorStructure.pdf  used on input line 80.
+(pdftex.def)             Requested size: 231.74521pt x 111.2955pt.
+[1{/home/felix/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map}{/home/felix/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}
+
+
+ <./Pictures/dataConectorStructure.pdf>]
+<Pictures/KortexAPISpeed.pdf, id=19, 462.52798pt x 346.89601pt>
+File: Pictures/KortexAPISpeed.pdf Graphic file (type pdf)
+<use Pictures/KortexAPISpeed.pdf>
+Package pdftex.def Info: Pictures/KortexAPISpeed.pdf  used on input line 104.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
+ [2 <./Pictures/KortexAPISpeed.pdf>]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 167.
  (/home/felix/.miktex/texmfs/install/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 132--135
+Underfull \hbox (badness 10000) in paragraph at lines 172--175
 \OT1/ptm/m/n/10 Use []\OT1/pcr/m/n/10 {align} \OT1/ptm/m/n/10 or []\OT1/pcr/m/n/10 {IEEEeqnarray} \OT1/ptm/m/n/10 instead. The
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 166--167
+Underfull \hbox (badness 1454) in paragraph at lines 206--207
 []\OT1/ptm/m/n/10 In American English, commas, semicolons, periods,
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 166--167
+Underfull \hbox (badness 1609) in paragraph at lines 206--207
 \OT1/ptm/m/n/10 question and exclamation marks are located within
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 []\OT1/ptm/m/n/10 Do not use the word ``essentially'' to mean
  []
 
 
-Underfull \hbox (badness 4181) in paragraph at lines 174--175
+Underfull \hbox (badness 4181) in paragraph at lines 214--215
 []\OT1/ptm/m/n/10 The abbreviation ``i.e.'' means ``that is'', and the
  []
 
-<Pictures/fig1.png, id=12, 82.1469pt x 71.5473pt>
+<Pictures/fig1.png, id=65, 82.1469pt x 71.5473pt>
 File: Pictures/fig1.png Graphic file (type png)
 <use Pictures/fig1.png>
-Package pdftex.def Info: Pictures/fig1.png  used on input line 232.
+Package pdftex.def Info: Pictures/fig1.png  used on input line 272.
 (pdftex.def)             Requested size: 82.14668pt x 71.5471pt.
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 243.
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 283.
 (/home/felix/.miktex/texmfs/install/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 243.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 283.
 
-Underfull \hbox (badness 1502) in paragraph at lines 237--246
+Underfull \hbox (badness 1502) in paragraph at lines 277--286
 \OT1/ptm/m/n/10 labels. Use words rather than symbols or abbreviations
  []
 
-[2]
-Underfull \hbox (badness 1845) in paragraph at lines 282--283
+[3]
+Underfull \hbox (badness 1845) in paragraph at lines 323--324
 []\OT1/ptm/m/n/8 M. Young, The Technical Writer's Handbook. Mill Valley, CA:
  []
 
 
-Underfull \hbox (badness 5924) in paragraph at lines 286--287
+Underfull \hbox (badness 5924) in paragraph at lines 327--328
 \OT1/ptm/m/n/10 IEEE conference templates contain guidance text for
  []
 
@@ -349,24 +368,24 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3 <./Pictures/fig1.png (PNG copy)>] (conference_101719.aux)
+[4 <./Pictures/fig1.png (PNG copy)>] (conference_101719.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4295 strings out of 477183
- 66733 string characters out of 5809538
+ 4302 strings out of 477183
+ 67267 string characters out of 5809538
  1937807 words of memory out of 5000000
- 25526 multiletter control sequences out of 15000+600000
- 609174 words of font info for 137 fonts, out of 8000000 for 9000
+ 25538 multiletter control sequences out of 15000+600000
+ 606003 words of font info for 129 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  57i,11n,65p,686b,306s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmb8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmbi8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (3 pages, 143080 bytes).
+Output written on conference_101719.pdf (4 pages, 171495 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
+ 122 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

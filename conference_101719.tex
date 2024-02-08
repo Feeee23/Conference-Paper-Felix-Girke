@@ -21,7 +21,7 @@ should not be used}
 \IEEEauthorblockA{\textit{Computer Science and Engineering} \\
 \textit{Frankfurt University of Applied Science}\\
 Frankfurt, Germany \\
-email address or ORCID}
+https://orcid.org/0009-0004-3967-6750}
 \and
 \IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
 \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
@@ -34,42 +34,72 @@ email address or ORCID}
 \textit{name of organization (of Aff.)}\\
 City, Country \\
 email address or ORCID}
-\and
-\IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
-\and
-\IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
-\and
-\IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
 }
 
 \maketitle
 
 \begin{abstract}
-This document is a model and instructions for \LaTeX.
-This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
-or Math in Paper Title or Abstract.
+To solve the problem of different interfaces for different robots a data connector is developed.
+It creates a interoperable, decentralized Network for a robot system using the Open Platform Communication Unified Architecture (OPC-UA) standard.
+Creating a flexible digital twin in Isaac Sim to visualize the data of the robot system.
+Remote access to the data connectors (and the digital twin) to monitor the robot system from everywhere.
 \end{abstract}
 
 \begin{IEEEkeywords}
-component, formatting, style, styling, insert
+OPC-UA, interoperable, decentralized, digital Twin, Isaac Sim, remote access
 \end{IEEEkeywords}
 
 \section{Introduction}
-This document is a model and instructions for \LaTeX.
-Please observe the conference page limits. 
+Every robot manufacturer develops uses their own way of communication with their robot.
+This leads to problems when trying to build a robot system with multiple robots from different brands.
+In this example two robot arms from Kinova are to be mounted on a Husky mobile robot platform from Clearpath.
+The Husky uses Robot Operating System (ROS) to communicate internally while the robot arms use the Kortex api from Kinova.
+To combine them into one digital twin they should be on one standard.
+For this a data connector is developed on the Open Platform Communication Unified Architecture (OPC-UA) standard.
+Its purpose is to act as a layer between the robot specific language and the outside world, in this example the digital twin.
+To add flexibility the robot data isn't collected on one server but every robot has its own server.
+Because of this decentralized approach every client can choose to connect only to the servers it wants to.
+For example if only one of the robot arms is mounted on the husky the digital twin can connect to only this one while the other robot arm con be used otherwise.
+\section{Advantages of OPC-UA}
+was ist opcua? \cite{OPCUA}
+warum opcua
+sprich semantische Interoperabilität, Ressourcenschonung (Subscribe und Publish statt Polling), …das wäre Kap. 3.1
 
+\section{Development of the data connector}
+Depending on the robot it might be possible to install software onto it.
+If this is the case there is no need for additional Hardware .
+On the Husky PC runs ROS, so it is possible to create an ROS package with a OPC-UA Server.
+On the Kinova robot arms on the other Hand it is not possible to install software, so an Raspberry Pi is used which gets the data from the robot and makes them accessible via an OPC-UA server.
+To simplify the development the OPC-UA Server code is implemented as a stand-alone class, so it can be reused for different robots.
+\subsection{As a ROS package}
+\subsection{As a stand-alone device}
+As Hardware for the stand-alone device a Raspberry PI 3B+ is used because it is very versatile. It could connect to robots via Ethernet, USB or with the GPIO pin nearly every other connection standard.
+Furthermore it is powerful enough to handle an OPC-UA server and talk to an robot at the same time.
+The Code is split into three main parts (Fig. \ref{fig:dataConectorStructure}).
+\begin{figure}[htbp]
+    \centerline{\includegraphics{Pictures/dataConectorStructure.pdf}}
+    \caption{Code structure of the data connector}
+    \label{fig:dataConectorStructure}
+\end{figure}
+One part is the communication to the robot via the Kortex api, the second part is the OPC-UA server with the open62541 library.
+The main code part in the middle  starts a thread for the connection to the robot and a thread for the OPC-UA Server.
+It also connects the data from from the robot class to the OPC-UA Server class.
+So if the connector is used with another robot, it is enough to just write a new connection to the robot.
+It is also possible to prepare the connection to a robot from a different manufacturer and let the main code detect what robot is connected.
+This increases the flexibility of the data connector. 
+% ToDo:
+% syncronisation
+% rapsi nicht auf der Oberflache bleiben
+% batterie soc
+% digialen zwilling vor dem kauf durch den Server simulation
+\section{Performance Tests}
+
+\subsection{Getting data from the robot}
+
+\subsection{Getting Data from the OPC-UA Server}
+\section{Digital twin}
+\section{Remote access}
+\newpage
 \section{Ease of Use}
 
 \subsection{Maintaining the Integrity of the Specifications}
@@ -273,6 +303,7 @@ For papers published in translation journals, please give the English
 citation first, followed by the original foreign-language citation \cite{b6}.
 
 \begin{thebibliography}{00}
+\bibitem{OPCUA}https://opcfoundation.org/about/opc-technologies/opc-ua/
 \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
 \bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
 \bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
