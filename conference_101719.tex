@@ -11,11 +11,7 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Felix Paper Title*\\
-{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
-should not be used}
-\thanks{Identify applicable funding agency here. If none, delete this.}
-}
+\title{Felix Paper Title*}
 
 \author{\IEEEauthorblockN{Felix Girke}
 \IEEEauthorblockA{\textit{Computer Science and Engineering} \\
@@ -69,12 +65,16 @@ To make these decisions they need to be connected to other machines and resource
 On this need for connection many different standards where build.
 Two of the most common are Message Queuing Telemetry Transport (MQTT) and OPC-UA \cite{CommTechnology}.
 Both are build on the Transmission Control Protocol (TCP).
-UA is an standard published by the Open Platform Communication Foundation in 2008 and is an "platform independent service-oriented architecture that integrates all the functionality of the individual OPC Classic specifications into one extensible framework" \cite{OPCUA}.
-While MQTT is event driven OPC-UA is based on requests but has also an PubSub mode \cite{OPCUA}. 
+UA is a standard published by the Open Platform Communication Foundation in 2008 and is an "platform independent service-oriented architecture that integrates all the functionality of the individual OPC Classic specifications into one extensible framework" \cite{OPCUA}.
+While MQTT is event driven OPC-UA is has both a Remote Procedure Call (RPC) and an PubSub mode \cite{OPCUA}. 
+OPC-UA is not as lightweight as MQTT but the information model is much more semantic and it is even much more performant than MQTT \cite{CommunicationCommarison}.
 In 2014 the Fraunhofer IOSB has started the open62541 library for C in cooperation with RW-TH Aachen and the TU Dresden \cite{open62541}.
 Today this is one of the feature richest open source implementation of the OPC-UA standard \cite{ComparOPCUAPaper}.
-FreeOpcUa on the other hand is a very easy to use python library. 
-
+On the other hand there is FreeOpcUa as an very easy to use python library.
+Its performance might not be as good as the C-library but with an powerful PC it isn't the limiting factor and can also be used.\\
+The architecture of OPC-UA with an standard between all servers and clients makes it perfect for building a decentralized and interoperable network.
+It is easy to have multiple servers and clients in one network and every client can talk to every server simultaneously.
+This makes the network very flexible.
 \section{Development of the data connector}
 Depending on the robot it might be possible to install software onto it.
 If this is the case there is no need for additional Hardware .
@@ -183,7 +183,6 @@ To make the digital twin more realistic you can choose in the GUI to load a 3D s
 % ToDo:
 % syncronisation
 % rapsi nicht auf der Oberflache bleiben
-% digialen zwilling vor dem kauf durch den Server simulation
 
 
 \begin{thebibliography}{00}
@@ -192,6 +191,7 @@ To make the digital twin more realistic you can choose in the GUI to load a 3D s
 \bibitem{OPCUA}Open Platform Communication Foundation, Unified Architecture, https://opcfoundation.org/about/opc-technologies/opc-ua/, last checked 09.02.2024.
 \bibitem{ComparOPCUAPaper}Mühlbauer, Nikolas; Kirdan, Erkin; Pahl, Marc-Oliver; Waedt, Karl (2021): Feature-based Comparison of Open Source OPC-UA Implementations. INFORMATIK 2020. DOI: 10.18420/inf2020\_34. Gesellschaft für Informatik, Bonn. PISSN: 1617-5468. ISBN: 978-3-88579-701-2. pp. 367-377. 5th GI/ACM I4.0 Standardization Workshop on Industrial Automation and Control Systems. Karlsruhe. 28. September - 2. Oktober 2020
 \bibitem{open62541}Florian Palm, Sten Gruner, Julius Pfrommer, Markus Graube, Leon Urbas, open62541 – der offene OPC UA Stack, https://publica-rest.fraunhofer.de/server/api/core/bitstreams/d860fd4c-c051-4e71-815b-23c7fc4c2549/content
+\bibitem{CommunicationCommarison} Profanter, Stefan, Tekat, Ayhun, Dorofeev, Kirill, Rickert, Markus, Knoll, Alois. (2019). OPC UA versus ROS, DDS, and MQTT: Performance Evaluation of Industry 4.0 Protocols. 10.1109/ICIT.2019.8755050. 
 \bibitem{KortexUDP} Kinova Robotics Inc., Kortex TransportClient classes, https://docs.kinovarobotics.com/kortex/linked\_md/cpp\_transport\_router\_session\_notif.html\#transportclient-classes, last checked 08.02.2024.
 % \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
 % \bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
