@@ -61,9 +61,19 @@ To add flexibility the robot data isn't collected on one server but every robot 
 Because of this decentralized approach every client can choose to connect only to the servers it wants to.
 For example if only one of the robot arms is mounted on the husky the digital twin can connect to only this one while the other robot arm con be used otherwise.
 \section{Advantages of OPC-UA}
-was ist opcua? \cite{OPCUA}
-warum opcua
-sprich semantische Interoperabilität, Ressourcenschonung (Subscribe und Publish statt Polling), …das wäre Kap. 3.1
+% was ist opcua? \cite{OPCUA}
+% warum opcua
+% sprich semantische Interoperabilität, Ressourcenschonung (Subscribe und Publish statt Polling), …das wäre Kap. 3.1\\
+The fourth industrial revolution is about making machines and products "smart" to make decisions and control the manufacturing process on their own \cite{Industry4}.
+To make these decisions they need to be connected to other machines and resources to get data on which the decisions are based.
+On this need for connection many different standards where build.
+Two of the most common are Message Queuing Telemetry Transport (MQTT) and OPC-UA \cite{CommTechnology}.
+Both are build on the Transmission Control Protocol (TCP).
+UA is an standard published by the Open Platform Communication Foundation in 2008 and is an "platform independent service-oriented architecture that integrates all the functionality of the individual OPC Classic specifications into one extensible framework" \cite{OPCUA}.
+While MQTT is event driven OPC-UA is based on requests but has also an PubSub mode \cite{OPCUA}. 
+In 2014 the Fraunhofer IOSB has started the open62541 library for C in cooperation with RW-TH Aachen and the TU Dresden \cite{open62541}.
+Today this is one of the feature richest open source implementation of the OPC-UA standard \cite{ComparOPCUAPaper}.
+FreeOpcUa on the other hand is a very easy to use python library. 
 
 \section{Development of the data connector}
 Depending on the robot it might be possible to install software onto it.
@@ -94,11 +104,7 @@ It also connects the data from from the robot class to the OPC-UA Server class.
 So if the connector is used with another robot, it is enough to just write a new connection to the robot.
 It is also possible to prepare the connection to a robot from a different manufacturer and let the main code detect what robot is connected.
 This increases the flexibility of the data connector. 
-% ToDo:
-% syncronisation
-% rapsi nicht auf der Oberflache bleiben
-% batterie soc
-% digialen zwilling vor dem kauf durch den Server simulation
+
 \section{Performance Tests}
 To ensure the data doesn't take to long from the robot to a client a series of performance tests are conducted.
 These can be separate in two parts. 
@@ -174,50 +180,30 @@ To make the digital twin more realistic you can choose in the GUI to load a 3D s
 \end{figure}
 
 \section{Remote access}
-\newpage
+% ToDo:
+% syncronisation
+% rapsi nicht auf der Oberflache bleiben
+% digialen zwilling vor dem kauf durch den Server simulation
 
-\section*{Acknowledgment}
-
-The preferred spelling of the word ``acknowledgment'' in America is without 
-an ``e'' after the ``g''. Avoid the stilted expression ``one of us (R. B. 
-G.) thanks $\ldots$''. Instead, try ``R. B. G. thanks$\ldots$''. Put sponsor 
-acknowledgments in the unnumbered footnote on the first page.
-
-\section*{References}
-
-Please number citations consecutively within brackets \cite{b1}. The 
-sentence punctuation follows the bracket \cite{b2}. Refer simply to the reference 
-number, as in \cite{b3}---do not use ``Ref. \cite{b3}'' or ``reference \cite{b3}'' except at 
-the beginning of a sentence: ``Reference \cite{b3} was the first $\ldots$''
-
-Number footnotes separately in superscripts. Place the actual footnote at 
-the bottom of the column in which it was cited. Do not put footnotes in the 
-abstract or reference list. Use letters for table footnotes.
-
-Unless there are six authors or more give all authors' names; do not use 
-``et al.''. Papers that have not been published, even if they have been 
-submitted for publication, should be cited as ``unpublished'' \cite{b4}. Papers 
-that have been accepted for publication should be cited as ``in press'' \cite{b5}. 
-Capitalize only the first word in a paper title, except for proper nouns and 
-element symbols.
-
-For papers published in translation journals, please give the English 
-citation first, followed by the original foreign-language citation \cite{b6}.
 
 \begin{thebibliography}{00}
-\bibitem{OPCUA}https://opcfoundation.org/about/opc-technologies/opc-ua/
-\bibitem{KortexUDP} Kinova, Kortex TransportClient classes, https://docs.kinovarobotics.com/kortex/linked\_md/cpp\_transport\_router\_session\_notif.html\#transportclient-classes, last checked 08.02.2024
-\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
-\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
-\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
-\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
-\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
-\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
-\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
+\bibitem{Industry4}Lasi, H., Fettke, P., Kemper, HG. et al. Industry 4.0. Bus Inf Syst Eng 6, 239–242 (2014). https://doi.org/10.1007/s12599-014-0334-4
+\bibitem{CommTechnology} P. Marcon et al., "Communication technology for industry 4.0," 2017 Progress In Electromagnetics Research Symposium - Spring (PIERS), St. Petersburg, Russia, 2017, pp. 1694-1697, doi: 10.1109/PIERS.2017.8262021.
+\bibitem{OPCUA}Open Platform Communication Foundation, Unified Architecture, https://opcfoundation.org/about/opc-technologies/opc-ua/, last checked 09.02.2024.
+\bibitem{ComparOPCUAPaper}Mühlbauer, Nikolas; Kirdan, Erkin; Pahl, Marc-Oliver; Waedt, Karl (2021): Feature-based Comparison of Open Source OPC-UA Implementations. INFORMATIK 2020. DOI: 10.18420/inf2020\_34. Gesellschaft für Informatik, Bonn. PISSN: 1617-5468. ISBN: 978-3-88579-701-2. pp. 367-377. 5th GI/ACM I4.0 Standardization Workshop on Industrial Automation and Control Systems. Karlsruhe. 28. September - 2. Oktober 2020
+\bibitem{open62541}Florian Palm, Sten Gruner, Julius Pfrommer, Markus Graube, Leon Urbas, open62541 – der offene OPC UA Stack, https://publica-rest.fraunhofer.de/server/api/core/bitstreams/d860fd4c-c051-4e71-815b-23c7fc4c2549/content
+\bibitem{KortexUDP} Kinova Robotics Inc., Kortex TransportClient classes, https://docs.kinovarobotics.com/kortex/linked\_md/cpp\_transport\_router\_session\_notif.html\#transportclient-classes, last checked 08.02.2024.
+% \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
+% \bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
+% \bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
+% \bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
+% \bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
+% \bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
+% \bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
 \end{thebibliography}
-\vspace{12pt}
-\color{red}
-IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
+% \vspace{12pt}
+% \color{red}
+% IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
 
 \end{document}
 
