@@ -180,6 +180,21 @@ To make the digital twin more realistic you can choose in the GUI to load a 3D s
 \end{figure}
 
 \section{Remote access}
+To monitor the robot system from everywhere in the world a remote access to the data connectors is needed.
+For this an mobile 5G router is mounted on the Husky. To this Router all the data connectors are connected.
+On the router an (name?) VPN is installed, so to connect to a data connector a client has to connect to the router via the VPN first.
+Afterwards the connection to the data connector is identical as before.
+In Fig. \ref{fig:RemoteAccess} an Example is shown where the client is accessing the battery data of the Husky from a train while the Husky is in the lab of the university.
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=4cm]{Pictures/fig1.png}\includegraphics[width=4cm]{Pictures/fig1.png}}
+    \caption{Example of the remote access to the data connector of the robot in the university lab from a Train}
+    \label{fig:RemoteAccess}
+\end{figure}
+To achieve this a special Sim Card for the router is needed.
+It has to have an public IP-Address. For Sim Cards this is not common.
+Normally they get their Messages like push notification via a Google or Apple Server.
+Without an public IP-Address it is not possible to reach the VPN server.
+\section{Conclusion}
 % ToDo:
 % syncronisation
 % rapsi nicht auf der Oberflache bleiben
