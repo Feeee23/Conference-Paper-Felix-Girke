@@ -36,9 +36,9 @@ email address or ORCID}
 
 \begin{abstract}
 To solve the problem of different interfaces for different robots a data connector is developed.
-It creates a interoperable, decentralized Network for a robot system using the Open Platform Communication Unified Architecture (OPC-UA) standard.
-Creating a flexible digital twin in Isaac Sim to visualize the data of the robot system.
-Remote access to the data connectors (and the digital twin) to monitor the robot system from everywhere.
+It creates a interoperable, decentralized network for a robot system using the Open Platform Communication Unified Architecture (OPC-UA) standard.
+Using this network a flexible digital twin is created in Isaac Sim to visualize the data of the robot system.
+To monitor the robot system from everywhere the possibility of an remote access to the data connectors is set up.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -53,13 +53,10 @@ The Husky uses Robot Operating System (ROS) to communicate internally while the 
 To combine them into one digital twin they should be on one standard.
 For this a data connector is developed on the Open Platform Communication Unified Architecture (OPC-UA) standard.
 Its purpose is to act as a layer between the robot specific language and the outside world, in this example the digital twin.
-To add flexibility the robot data isn't collected on one server but every robot has its own server.
-Because of this decentralized approach every client can choose to connect only to the servers it wants to.
-For example if only one of the robot arms is mounted on the husky the digital twin can connect to only this one while the other robot arm con be used otherwise.
+To add flexibility the robot data isn't collected on one central server but every robot has its own server.
+Because of this decentralized approach every client can choose to connect only to the servers it needs to.
+For example if only one of the robot arms is mounted on the Husky the digital twin can connect to only this one robot arm while the other robot arm can be used otherwise.
 \section{Advantages of OPC-UA}
-% was ist opcua? \cite{OPCUA}
-% warum opcua
-% sprich semantische Interoperabilität, Ressourcenschonung (Subscribe und Publish statt Polling), …das wäre Kap. 3.1\\
 The fourth industrial revolution is about making machines and products "smart" to make decisions and control the manufacturing process on their own \cite{Industry4}.
 To make these decisions they need to be connected to other machines and resources to get data on which the decisions are based.
 On this need for connection many different standards where build.
@@ -67,7 +64,7 @@ Two of the most common are Message Queuing Telemetry Transport (MQTT) and OPC-UA
 Both are build on the Transmission Control Protocol (TCP).
 UA is a standard published by the Open Platform Communication Foundation in 2008 and is an "platform independent service-oriented architecture that integrates all the functionality of the individual OPC Classic specifications into one extensible framework" \cite{OPCUA}.
 While MQTT is event driven OPC-UA is has both a Remote Procedure Call (RPC) and an PubSub mode \cite{OPCUA}. 
-OPC-UA is not as lightweight as MQTT but the information model is much more semantic and it is even much more performant than MQTT \cite{CommunicationCommarison}.
+OPC-UA is not as lightweight as MQTT but the information model is much more semantic and it is much more performant than MQTT \cite{CommunicationCommarison}.
 In 2014 the Fraunhofer IOSB has started the open62541 library for C in cooperation with RW-TH Aachen and the TU Dresden \cite{open62541}.
 Today this is one of the feature richest open source implementation of the OPC-UA standard \cite{ComparOPCUAPaper}.
 On the other hand there is FreeOpcUa as an very easy to use python library.
@@ -79,10 +76,7 @@ This makes the network very flexible.
 Depending on the robot it might be possible to install software onto it.
 If this is the case there is no need for additional Hardware .
 On the Husky PC runs ROS, so it is possible to create an ROS package with a OPC-UA Server.
-On the Kinova robot arms on the other Hand it is not possible to install software, so an Raspberry Pi is used which gets the data from the robot and makes them accessible via an OPC-UA server.
-To simplify the development the OPC-UA Server code is implemented as a stand-alone class, so it can be reused for different robots.
-\subsection{As a ROS package}
-\subsection{As a stand-alone device}
+On the Kinova robot arms on the other Hand it is not possible to install software, so an Raspberry Pi is used as a data connector which gets the data from the robot and makes it accessible via an OPC-UA server.\\
 As Hardware for the stand-alone device a Raspberry PI 3B+ is used because it is very versatile. It could connect to robots via Ethernet, USB or with the GPIO pin nearly every other connection standard.
 Furthermore it is powerful enough to handle an OPC-UA server and talk to an robot at the same time and it's small.
 Because of its size it can be mounted directly on the Kinova robot without interfering with the movement of the robot (Fig. \ref{fig:dataConectorPic}).
@@ -100,8 +94,8 @@ The Code is split into three main parts (Fig. \ref{fig:dataConectorStructure}).
 \end{figure}
 One part is the communication to the robot via the Kortex api, the second part is the OPC-UA server with the open62541 library.
 The connection to the robot is done on the UDP protocol and the data is requested via the cyclic feedback function of the Kortex api, because it is the fastest way to get the data from the robot.
-The main code part in the middle  starts a thread for the connection to the robot and a thread for the OPC-UA Server.
-It also connects the data from from the robot class to the OPC-UA Server class.
+The main code part in the middle  starts a thread for the connection to the robot and a thread for the OPC-UA server.
+It also connects the data from from the robot class to the OPC-UA server class.
 To do this there is a map defined that connects the function needed to get the data from to robot to the name of the variable on the OPC-UA server.
 Therefore it is very easy to add or remove variables from the OPC-UA Sever by adding or removing an entry from this map.\\
 This system allows for a lot of flexibility. The data connector is plug and play with any of the Kinova robot arms because they all use the Kortex api.
@@ -122,10 +116,10 @@ That is even more than the 1000 datasets per second, that Kinova claims \cite{Ko
     \caption{Frequency with which the Raspberry Pi 3B+ can get data from the Kinova arm}
     \label{fig:KortexAPISpeed}
 \end{figure}
-A dataset consists of all the data the robot has to offer. Thats over 50 data points.
+A dataset consists of all the data the robot has to offer. That are over 50 data points.
 Is the OPC-UA server is running parallel on the Raspberry Pi the frequency is lower, around 1kHz.
 If one client is simultaneously requesting data from the OPC-UA server the frequency isn't really affected.
-But if there are more clients then the frequency begins to drop slowly.
+But if there are more clients then the frequency begins to drop a little bit.
 \subsection{Getting Data from the data connector}
 To get the data from the data connector two different PCs are used. One midrange Laptop (Intel 11.Gen Core i7-1165G7, Realtek Semiconductor
 RTL8152 Fast Ethernet Adapter) and an high end Tower PC (Intel 13.Gen Core i9-13900KF, Realtek Gaming R2.5GbE Family Controller).
@@ -135,16 +129,16 @@ The PCs and the data connector are all connected to a Router (tp-link Archer C80
     \caption{Frequency with which data can be requested from the OPC-UA server}
     \label{fig:OPCUASpeed1D}
 \end{figure}
-In Fig. \ref{fig:OPCUASpeed1D} different libraries are used for the client to request one Value from the data connector.
-On the Laptop the c-library open62541 is faster than the python library freeopcua.
-On the Tower PC the python library is even faster than the c library on the Laptop.
+In Fig. \ref{fig:OPCUASpeed1D} different libraries are used for the client to request one value from the data connector.
+On the Laptop the C-library open62541 is faster than the python library FreeOpcUa.
+On the Tower PC the python library is even faster than the C-library on the Laptop.
 If these results are compared to the ping between these PCs and the data connector (Fig. \ref{fig:PingDiagram}) it can be concluded that the python library on the Tower PC is running close to the actual limit of the network.\\
 \begin{figure}[htbp]
     \centerline{\includegraphics[width=8cm]{Pictures/PingDiagram.pdf}}
     \caption{Ping to the data connector}
     \label{fig:PingDiagram}
 \end{figure}
-If multiple clients are started in parallel on the Tower PC there is a slight decrease in the frequency with which the data can be requested from the data connector (Fig. \ref{fig:OPCUASpeed1D}).
+If multiple clients are started in parallel on the Tower PC there is a slight decrease in the frequency with which the data can be requested from the data connector (Fig. \ref{fig:OPCUASpeed1D}).\\
 \begin{figure}[htbp]
     \centerline{\includegraphics[width=8cm]{Pictures/OPCUAMultipleDatenAufEinmal.pdf}}
     \caption{Frequency with which different datasets can be requested from the OPC-UA server}
@@ -156,11 +150,12 @@ It is clearly not an linear decrease but also not an exponential one.
 Both the PC and the Raspberry Pi are using less than 20\% CPU so this isn't the bottleneck.
 The size of the package gets bigger with every additional Value and there seems to be no limit at which the packages are split.
 If all 57 Values are requested in one package its size is 2538 bytes.
-This length is depending mostly of the name of the Values because the longer they are, the bigger the package.\\
-The best way to request this many Values is in two packages with 28 and 29 Values each.
-The frequency is half that of one 30 Value package but this is still nearly two times as fast as requesting all 57 Values in one package.
+This length is depending mostly of the name of the values because the longer they are, the bigger the package.\\
+The best way to request this many values is in two packages with 28 and 29 values each.
+The frequency is half that of one 30 value package but this is still nearly two times as fast as requesting all 57 values in one package.
 \section{Husky battery Soc}
-The State of Charge (SoC) display of the Husky is probably tuned for an lithium ion battery so it is very inaccurate for the sealed lead-acid battery that is currently powering the Husky.
+Not all data can just be displayed on the OPC-UA server the State of Charge (SoC) of the Husky is only visible on a four segment display and not available as a value.
+The display is probably tuned for an lithium ion battery so it is very inaccurate for the sealed lead-acid battery that is currently powering the Husky.
 Because of this tuning it shows only around 50\% SoC with an full battery and after a short usage it shows 0\% SoC.
 To create a better estimation of the SoC a ROS package is created that uses the measured current an potential of the battery and publishes an estimation of the SoC tuned for a SLA battery.
 This data is also published on the OPC-UA server.
@@ -175,10 +170,10 @@ With this curves the SoC can be estimated using the measured current and potenti
 First the functions of the curves have to be approximated. For this a 4th degree polynomial is used.
 It represents the curves fairly accurate within the range of the curves.
 To make the estimation easier the x and y data is flipped before approximation.
-The results are functions for different current that output the time the battery is used with this current.
-Comparing this value with the maximal time a the battery can be used with this current gives the percentage of battery that is used.
+The results are functions for different currents that output the time the battery is used with this current.
+Comparing this value with the maximal time a the battery can be used with this current gives the percentage of battery that is already consumed.
 \subsection{Validating the SoC estimation}
-To validate the estimation a battery is put thur an complete discharge cycle and the estimated SoC, the current and the potential of the battery are recorded.
+To validate the estimation a battery is put through an complete discharge cycle and the estimated SoC, the current and the potential of the battery are recorded.
 In Fig. \ref{fig:SoCUeberZeit} is the estimation of the SoC over one discharge cycle shown.
 \begin{figure}[htbp]
     \centerline{\includegraphics[width=8cm]{Pictures/SoCUeberZeit.pdf}}
@@ -194,14 +189,14 @@ The estimated SoC is an moving average over 100 values but still there is some n
     \label{fig:SpannungStromUeberZeit}
 \end{figure}
 There are also big spikes in the data around 180 and 600 minutes. At the same time there are spikes in the current but not in the potential.
-For this reason it is likely that this is based on measuring error. Because there is no documentation on which sensor Clearpath has used it can't be replicated.
+For this reason it is likely that this is based on measuring error. Because there is no documentation on which sensor Clearpath has used or how the measures are made it can't be replicated.
 But the the new SoC estimation is much better than the old one and an underestimation of the SoC leads to an bigger safety margin which is also good.
 \section{Digital twin}
 The digital twin is build in Isaac Sim.
-This is a simulation tool for robots which part of the NIVIDIA Omniverse.
+This is a simulation tool for robots and part of the NVIDIA Omniverse.
 In order to connecting to the OPC-UA server, a client is needed.
 The best way to implement this is via an extension for Isaac Sim.
-To reflect the modularity of robot system and the decentralized Network approach multiple different configurations of the robot system are created.
+To reflect the modularity of the robot system and the decentralized network approach, multiple different configurations of the robot system are created.
 The extension has an Graphical User Interface (GUI) in which the configuration of the robot system can be chosen.
 Independent form the chosen configuration it is also possible to choose to which OPC-UA server you want to connect.
 This allows to test a robot configuration you don't have. 
@@ -209,9 +204,9 @@ For example it could be tested if the Husky will tip over when the Kinova arm do
 Just load an configuration with the Husky and an Kinova arm and connect to the Kinova arm.
 The Kinova arm can now be moved with the controller and you can test any movement.\\
 Furthermore it is possible to open a graph in which any data from the robot can be displayed.
-So even the non-visible data can be visualized.
+So the non-visible data like current or temperature can be visualized.
 Even if you don't use one of the robots in the robot system it is still possible to connect to the robot to keep an eye on its vitals.\\
-To make the digital twin more realistic you can choose in the GUI to load a 3D scan of the University as an environment for the digital twin (Fig. \ref{fig:CompareDigitalReal}).
+To make the digital twin more realistic you can choose in the GUI to load a 3D scan of the university as an environment for the digital twin (Fig. \ref{fig:CompareDigitalReal}).
 \begin{figure}[htbp]
     \centerline{\includegraphics[width=4cm]{Pictures/fig1.png}\includegraphics[width=4cm]{Pictures/fig1.png}}
     \caption{Comparison of the digital twin (left) and the real robot (right)}
@@ -223,7 +218,7 @@ To monitor the robot system from everywhere in the world a remote access to the 
 For this an mobile 5G router is mounted on the Husky. To this Router all the data connectors are connected.
 On the router an (name?) VPN is installed, so to connect to a data connector a client has to connect to the router via the VPN first.
 Afterwards the connection to the data connector is identical as before.
-In Fig. \ref{fig:RemoteAccess} an Example is shown where the client is accessing the battery data of the Husky from a train while the Husky is in the lab of the university.
+In Fig. \ref{fig:RemoteAccess} an example is shown where the client is accessing the battery data of the Husky from a train while the Husky is in the lab of the university.
 \begin{figure}[htbp]
     \centerline{\includegraphics[width=4cm]{Pictures/fig1.png}\includegraphics[width=4cm]{Pictures/fig1.png}}
     \caption{Example of the remote access to the data connector of the robot in the university lab from a Train}
@@ -231,14 +226,14 @@ In Fig. \ref{fig:RemoteAccess} an Example is shown where the client is accessing
 \end{figure}
 To achieve this a special Sim Card for the router is needed.
 It has to have an public IP-Address. For Sim Cards this is not common.
-Normally they get their Messages like push notification via a Google or Apple Server.
+Normally they get their Messages like push notification via a Google or Apple server.
 Without an public IP-Address it is not possible to reach the VPN server.
 \section{Conclusion}
 It could be shown in this paper that it is possible to create an decentralized and interoperable network using the OPC-UA standard.
 Furthermore with the data connector the whole setup is very flexible because it can be added to every Kinova robot arm using the Kortex api.
 It is also possible to expand the data connector to work with many different robots from different manufactures.
 The shown digital twin proves it is easy to connect to different robots when they are all using the same standard and the performance tests have shown this standard is fast enough to deliver a accurate digital twin.
-Thur the possibility of an remote connection to the different data connector is with this setup possible to monitor the robot system from all over the world.
+Through the possibility of an remote connection to the different data connector is with this setup possible to monitor the robot system from all over the world.
 
 \begin{thebibliography}{00}
 \bibitem{Industry4}Lasi, H., Fettke, P., Kemper, HG. et al. Industry 4.0. Bus Inf Syst Eng 6, 239–242 (2014). https://doi.org/10.1007/s12599-014-0334-4
@@ -247,25 +242,7 @@ Thur the possibility of an remote connection to the different data connector is 
 \bibitem{ComparOPCUAPaper}Mühlbauer, Nikolas; Kirdan, Erkin; Pahl, Marc-Oliver; Waedt, Karl (2021): Feature-based Comparison of Open Source OPC-UA Implementations. INFORMATIK 2020. DOI: 10.18420/inf2020\_34. Gesellschaft für Informatik, Bonn. PISSN: 1617-5468. ISBN: 978-3-88579-701-2. pp. 367-377. 5th GI/ACM I4.0 Standardization Workshop on Industrial Automation and Control Systems. Karlsruhe. 28. September - 2. Oktober 2020
 \bibitem{open62541}Florian Palm, Sten Gruner, Julius Pfrommer, Markus Graube, Leon Urbas, open62541 – der offene OPC UA Stack, https://publica-rest.fraunhofer.de/server/api/core/bitstreams/d860fd4c-c051-4e71-815b-23c7fc4c2549/content
 \bibitem{CommunicationCommarison} Profanter, Stefan, Tekat, Ayhun, Dorofeev, Kirill, Rickert, Markus, Knoll, Alois. (2019). OPC UA versus ROS, DDS, and MQTT: Performance Evaluation of Industry 4.0 Protocols. 10.1109/ICIT.2019.8755050. 
-\bibitem{KortexUDP} Kinova Robotics Inc., Kortex TransportClient classes, https://docs.kinovarobotics.com/kortex/linked\_md/cpp\_transport\_router\_session\_notif.html\#transportclient-classes, last checked 08.02.2024.
-\bibitem{SLAKurven} Clearpath. Husky A200 UGV User Manual. url: https://clearpathrobotics.com/husky-documentation/ last checked am 21. 10. 2023.
+\bibitem{KortexUDP} Kinova Robotics Inc., Kortex TransportClient classes, https://docs.\\kinovarobotics.com/kortex/linked\_md/cpp\_transport\_router\_session\_\\notif.html\#transportclient-classes, last checked 08.02.2024.
+\bibitem{SLAKurven} Clearpath. Husky A200 UGV User Manual. url: https://clearpathrobotics.com/husky-documentation/ last checked 21. 10. 2023.
 \end{thebibliography}
-
 \end{document}
-
-% \begin{table}[htbp]
-% \caption{Table Type Styles}
-% \begin{center}
-% \begin{tabular}{|c|c|c|c|}
-% \hline
-% \textbf{Table}&\multicolumn{3}{|c|}{\textbf{Table Column Head}} \\
-% \cline{2-4} 
-% \textbf{Head} & \textbf{\textit{Table column subhead}}& \textbf{\textit{Subhead}}& \textbf{\textit{Subhead}} \\
-% \hline
-% copy& More table copy$^{\mathrm{a}}$& &  \\
-% \hline
-% \multicolumn{4}{l}{$^{\mathrm{a}}$Sample of a Table footnote.}
-% \end{tabular}
-% \label{tab1}
-% \end{center}
-% \end{table}

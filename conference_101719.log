@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.9.22)  12 FEB 2024 10:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.9.22)  12 FEB 2024 12:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -283,12 +283,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <Pictures/PiGehaeuseVorne.jpeg, id=1, 537.50812pt x 630.85687pt>
 File: Pictures/PiGehaeuseVorne.jpeg Graphic file (type jpg)
 <use Pictures/PiGehaeuseVorne.jpeg>
-Package pdftex.def Info: Pictures/PiGehaeuseVorne.jpeg  used on input line 90.
+Package pdftex.def Info: Pictures/PiGehaeuseVorne.jpeg  used on input line 84.
 (pdftex.def)             Requested size: 113.81102pt x 133.5716pt.
 <Pictures/fig1.png, id=2, 82.1469pt x 71.5473pt>
 File: Pictures/fig1.png Graphic file (type png)
 <use Pictures/fig1.png>
-Package pdftex.def Info: Pictures/fig1.png  used on input line 90.
+Package pdftex.def Info: Pictures/fig1.png  used on input line 84.
 (pdftex.def)             Requested size: 113.81102pt x 99.13274pt.
 
 
@@ -296,7 +296,7 @@ pdfTeX warning: pdflatex (file ./Pictures/dataConectorStructure.pdf): PDF inclus
 <Pictures/dataConectorStructure.pdf, id=3, 231.74579pt x 111.29579pt>
 File: Pictures/dataConectorStructure.pdf Graphic file (type pdf)
 <use Pictures/dataConectorStructure.pdf>
-Package pdftex.def Info: Pictures/dataConectorStructure.pdf  used on input line 97.
+Package pdftex.def Info: Pictures/dataConectorStructure.pdf  used on input line 91.
 (pdftex.def)             Requested size: 231.74521pt x 111.2955pt.
 [1{/home/felix/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map}{/home/felix/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}
 
@@ -305,133 +305,123 @@ Package pdftex.def Info: Pictures/dataConectorStructure.pdf  used on input line 
 <Pictures/KortexAPISpeed.pdf, id=12, 462.52798pt x 346.89601pt>
 File: Pictures/KortexAPISpeed.pdf Graphic file (type pdf)
 <use Pictures/KortexAPISpeed.pdf>
-Package pdftex.def Info: Pictures/KortexAPISpeed.pdf  used on input line 121.
+Package pdftex.def Info: Pictures/KortexAPISpeed.pdf  used on input line 115.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
 <Pictures/OPCUASpeed1D.pdf, id=13, 462.52798pt x 346.89601pt>
 File: Pictures/OPCUASpeed1D.pdf Graphic file (type pdf)
 <use Pictures/OPCUASpeed1D.pdf>
-Package pdftex.def Info: Pictures/OPCUASpeed1D.pdf  used on input line 134.
+Package pdftex.def Info: Pictures/OPCUASpeed1D.pdf  used on input line 128.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
 <Pictures/PingDiagram.pdf, id=14, 462.52798pt x 346.89601pt>
 File: Pictures/PingDiagram.pdf Graphic file (type pdf)
 <use Pictures/PingDiagram.pdf>
-Package pdftex.def Info: Pictures/PingDiagram.pdf  used on input line 143.
+Package pdftex.def Info: Pictures/PingDiagram.pdf  used on input line 137.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
 <Pictures/OPCUAMultipleDatenAufEinmal.pdf, id=15, 462.52798pt x 346.89601pt>
 File: Pictures/OPCUAMultipleDatenAufEinmal.pdf Graphic file (type pdf)
 <use Pictures/OPCUAMultipleDatenAufEinmal.pdf>
-Package pdftex.def Info: Pictures/OPCUAMultipleDatenAufEinmal.pdf  used on input line 149.
+Package pdftex.def Info: Pictures/OPCUAMultipleDatenAufEinmal.pdf  used on input line 143.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
- [2 <./Pictures/PiGehaeuseVorne.jpeg> <./Pictures/fig1.png (PNG copy)> <./Pictures/dataConectorStructure.pdf> <./Pictures/KortexAPISpeed.pdf>]
-<Pictures/EndladekuvenSLA.png, id=67, 895.09406pt x 588.69937pt>
+ [2 <./Pictures/PiGehaeuseVorne.jpeg> <./Pictures/fig1.png (PNG copy)> <./Pictures/dataConectorStructure.pdf> <./Pictures/KortexAPISpeed.pdf> <./Pictures/OPCUASpeed1D.pdf>]
+<Pictures/EndladekuvenSLA.png, id=101, 895.09406pt x 588.69937pt>
 File: Pictures/EndladekuvenSLA.png Graphic file (type png)
 <use Pictures/EndladekuvenSLA.png>
-Package pdftex.def Info: Pictures/EndladekuvenSLA.png  used on input line 170.
+Package pdftex.def Info: Pictures/EndladekuvenSLA.png  used on input line 165.
 (pdftex.def)             Requested size: 227.62204pt x 149.70763pt.
-<Pictures/SoCUeberZeit.pdf, id=68, 462.52798pt x 346.89601pt>
+<Pictures/SoCUeberZeit.pdf, id=102, 462.52798pt x 346.89601pt>
 File: Pictures/SoCUeberZeit.pdf Graphic file (type pdf)
 <use Pictures/SoCUeberZeit.pdf>
-Package pdftex.def Info: Pictures/SoCUeberZeit.pdf  used on input line 184.
+Package pdftex.def Info: Pictures/SoCUeberZeit.pdf  used on input line 179.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-<Pictures/SpannungUeberZeit.pdf, id=69, 462.52798pt x 346.89601pt>
+<Pictures/SpannungUeberZeit.pdf, id=103, 462.52798pt x 346.89601pt>
 File: Pictures/SpannungUeberZeit.pdf Graphic file (type pdf)
 <use Pictures/SpannungUeberZeit.pdf>
-Package pdftex.def Info: Pictures/SpannungUeberZeit.pdf  used on input line 192.
+Package pdftex.def Info: Pictures/SpannungUeberZeit.pdf  used on input line 187.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
-<Pictures/StormUeberZeit.pdf, id=70, 462.52798pt x 346.89601pt>
+<Pictures/StormUeberZeit.pdf, id=104, 462.52798pt x 346.89601pt>
 File: Pictures/StormUeberZeit.pdf Graphic file (type pdf)
 <use Pictures/StormUeberZeit.pdf>
-Package pdftex.def Info: Pictures/StormUeberZeit.pdf  used on input line 192.
+Package pdftex.def Info: Pictures/StormUeberZeit.pdf  used on input line 187.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
- [3 <./Pictures/OPCUASpeed1D.pdf> <./Pictures/PingDiagram.pdf> <./Pictures/OPCUAMultipleDatenAufEinmal.pdf> <./Pictures/EndladekuvenSLA.png (PNG copy)>]
+ [3 <./Pictures/PingDiagram.pdf> <./Pictures/OPCUAMultipleDatenAufEinmal.pdf> <./Pictures/EndladekuvenSLA.png (PNG copy)>]
 File: Pictures/fig1.png Graphic file (type png)
 <use Pictures/fig1.png>
-Package pdftex.def Info: Pictures/fig1.png  used on input line 216.
+Package pdftex.def Info: Pictures/fig1.png  used on input line 211.
 (pdftex.def)             Requested size: 113.81102pt x 99.13274pt.
 File: Pictures/fig1.png Graphic file (type png)
 <use Pictures/fig1.png>
-Package pdftex.def Info: Pictures/fig1.png  used on input line 216.
+Package pdftex.def Info: Pictures/fig1.png  used on input line 211.
 (pdftex.def)             Requested size: 113.81102pt x 99.13274pt.
 File: Pictures/fig1.png Graphic file (type png)
 <use Pictures/fig1.png>
-Package pdftex.def Info: Pictures/fig1.png  used on input line 228.
+Package pdftex.def Info: Pictures/fig1.png  used on input line 223.
 (pdftex.def)             Requested size: 113.81102pt x 99.13274pt.
 File: Pictures/fig1.png Graphic file (type png)
 <use Pictures/fig1.png>
-Package pdftex.def Info: Pictures/fig1.png  used on input line 228.
+Package pdftex.def Info: Pictures/fig1.png  used on input line 223.
 (pdftex.def)             Requested size: 113.81102pt x 99.13274pt.
  [4 <./Pictures/SoCUeberZeit.pdf> <./Pictures/SpannungUeberZeit.pdf> <./Pictures/StormUeberZeit.pdf>]
-Underfull \hbox (badness 1571) in paragraph at lines 245--246
+Underfull \hbox (badness 1571) in paragraph at lines 240--241
 []\OT1/ptm/m/n/8 P. Marcon et al., "Communication technology for industry 4.0,"
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
 \OT1/ptm/m/n/8 (PIERS), St. Petersburg, Russia, 2017, pp. 1694-1697, doi:
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 246--247
+Underfull \hbox (badness 2913) in paragraph at lines 241--242
 []\OT1/ptm/m/n/8 Open Platform Communication Foundation, Unified Architecture,
  []
 
 
-Underfull \hbox (badness 6268) in paragraph at lines 247--248
+Underfull \hbox (badness 6268) in paragraph at lines 242--243
 []\OT1/ptm/m/n/8 M[]uhlbauer, Nikolas; Kirdan, Erkin; Pahl, Marc-Oliver; Waedt,
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 247--248
+Underfull \hbox (badness 1490) in paragraph at lines 242--243
 \OT1/ptm/m/n/8 Implementations. INFORMATIK 2020. DOI: 10.18420/inf2020[]34.
  []
 
 
-Underfull \hbox (badness 4096) in paragraph at lines 247--248
+Underfull \hbox (badness 4096) in paragraph at lines 242--243
 \OT1/ptm/m/n/8 on Industrial Automation and Control Systems. Karlsruhe. 28.
  []
 
 
-Underfull \hbox (badness 1796) in paragraph at lines 248--249
+Underfull \hbox (badness 1796) in paragraph at lines 243--244
 \OT1/ptm/m/n/8 Urbas, open62541 { der offene OPC UA Stack, https://publica-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
 \OT1/ptm/m/n/8 rest.fraunhofer.de/server/api/core/bitstreams/d860fd4c-c051-4e71-815b-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 []\OT1/ptm/m/n/8 Profanter, Stefan, Tekat, Ayhun, Dorofeev, Kirill, Rickert,
  []
 
 
-Underfull \hbox (badness 7012) in paragraph at lines 249--250
+Underfull \hbox (badness 7012) in paragraph at lines 244--245
 \OT1/ptm/m/n/8 Markus, Knoll, Alois. (2019). OPC UA versus ROS, DDS,
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 249--250
+Underfull \hbox (badness 3364) in paragraph at lines 244--245
 \OT1/ptm/m/n/8 and MQTT: Performance Evaluation of Industry 4.0 Protocols.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
-[]\OT1/ptm/m/n/8 Kinova Robotics Inc., Kortex TransportClient classes,
- []
-
-
-Overfull \hbox (112.15634pt too wide) in paragraph at lines 250--251
-\OT1/ptm/m/n/8 https://docs.kinovarobotics.com/kortex/linked[]md/cpp[]transport[]router[]session[]notif.html#transportclient-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 []\OT1/ptm/m/n/8 Clearpath. Husky A200 UGV User Manual. url:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 \OT1/ptm/m/n/8 https://clearpathrobotics.com/husky-documentation/ last checked
  []
 
@@ -457,13 +447,13 @@ L3 programming layer <2023-08-29>
 Here is how much of TeX's memory you used:
  4264 strings out of 477183
  68126 string characters out of 5809538
- 1936807 words of memory out of 5000000
+ 1935807 words of memory out of 5000000
  25518 multiletter control sequences out of 15000+600000
  592768 words of font info for 101 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  57i,11n,65p,567b,336s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmb8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmbi8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (5 pages, 751857 bytes).
+Output written on conference_101719.pdf (5 pages, 751188 bytes).
 PDF statistics:
  288 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
