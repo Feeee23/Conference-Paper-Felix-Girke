@@ -99,11 +99,14 @@ The Code is split into three main parts (Fig. \ref{fig:dataConectorStructure}).
     \label{fig:dataConectorStructure}
 \end{figure}
 One part is the communication to the robot via the Kortex api, the second part is the OPC-UA server with the open62541 library.
+The connection to the robot is done on the UDP protocol and the data is requested via the cyclic feedback function of the Kortex api, because it is the fastest way to get the data from the robot.
 The main code part in the middle  starts a thread for the connection to the robot and a thread for the OPC-UA Server.
 It also connects the data from from the robot class to the OPC-UA Server class.
-So if the connector is used with another robot, it is enough to just write a new connection to the robot.
-It is also possible to prepare the connection to a robot from a different manufacturer and let the main code detect what robot is connected.
-This increases the flexibility of the data connector. 
+To do this there is a map defined that connects the function needed to get the data from to robot to the name of the variable on the OPC-UA server.
+Therefore it is very easy to add or remove variables from the OPC-UA Sever by adding or removing an entry from this map.\\
+This system allows for a lot of flexibility. The data connector is plug and play with any of the Kinova robot arms because they all use the Kortex api.
+If the connector is to be used with another robot from another manufacturer, it is enough to just write a new connection to the robot and modify the main code.
+It is also possible to prepare the connection protocol for multiple robots from different manufacturers and let the main code detect which robot is connected and which protocol to use.
 
 \section{Performance Tests}
 To ensure the data doesn't take to long from the robot to a client a series of performance tests are conducted.
@@ -157,6 +160,42 @@ This length is depending mostly of the name of the Values because the longer the
 The best way to request this many Values is in two packages with 28 and 29 Values each.
 The frequency is half that of one 30 Value package but this is still nearly two times as fast as requesting all 57 Values in one package.
 \section{Husky battery Soc}
+The State of Charge (SoC) display of the Husky is probably tuned for an lithium ion battery so it is very inaccurate for the sealed lead-acid battery that is currently powering the Husky.
+Because of this tuning it shows only around 50\% SoC with an full battery and after a short usage it shows 0\% SoC.
+To create a better estimation of the SoC a ROS package is created that uses the measured current an potential of the battery and publishes an estimation of the SoC tuned for a SLA battery.
+This data is also published on the OPC-UA server.
+\subsection{Estimating the SoC}
+In the documentation of the Husky is Fig. \ref{fig:EndladekuvenSLA} to be found.
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=8cm]{Pictures/EndladekuvenSLA.png}}
+    \caption{Discharge time over different currents for the SLA battery of the Husky \cite[p.21]{SLAKurven}}
+    \label{fig:EndladekuvenSLA}
+\end{figure}
+With this curves the SoC can be estimated using the measured current and potential of the battery.
+First the functions of the curves have to be approximated. For this a 4th degree polynomial is used.
+It represents the curves fairly accurate within the range of the curves.
+To make the estimation easier the x and y data is flipped before approximation.
+The results are functions for different current that output the time the battery is used with this current.
+Comparing this value with the maximal time a the battery can be used with this current gives the percentage of battery that is used.
+\subsection{Validating the SoC estimation}
+To validate the estimation a battery is put thur an complete discharge cycle and the estimated SoC, the current and the potential of the battery are recorded.
+In Fig. \ref{fig:SoCUeberZeit} is the estimation of the SoC over one discharge cycle shown.
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=8cm]{Pictures/SoCUeberZeit.pdf}}
+    \caption{Comparison between the theoretical SoC and the estimated SoC over one discharge cycle}
+    \label{fig:SoCUeberZeit}
+\end{figure}
+As a comparison there is also the theoretical SoC calculated from the average current shown.
+First of all it is visible that the battery doesn't start at 100\% it is likely that the battery doesn't hold a full charge anymore because of wear.
+The estimated SoC is an moving average over 100 values but still there is some noise in the date. Thats because the measured potential and current are very noisy (Fig. \ref{fig:SpannungStromUeberZeit}).
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=4cm]{Pictures/SpannungUeberZeit.pdf}\includegraphics[width=4cm]{Pictures/StormUeberZeit.pdf}}
+    \caption{Measured potential and current over one discharge cycle of the Husky battery}
+    \label{fig:SpannungStromUeberZeit}
+\end{figure}
+There are also big spikes in the data around 180 and 600 minutes. At the same time there are spikes in the current but not in the potential.
+For this reason it is likely that this is based on measuring error. Because there is no documentation on which sensor Clearpath has used it can't be replicated.
+But the the new SoC estimation is much better than the old one and an underestimation of the SoC leads to an bigger safety margin which is also good.
 \section{Digital twin}
 The digital twin is build in Isaac Sim.
 This is a simulation tool for robots which part of the NIVIDIA Omniverse.
@@ -208,6 +247,7 @@ Without an public IP-Address it is not possible to reach the VPN server.
 \bibitem{open62541}Florian Palm, Sten Gruner, Julius Pfrommer, Markus Graube, Leon Urbas, open62541 – der offene OPC UA Stack, https://publica-rest.fraunhofer.de/server/api/core/bitstreams/d860fd4c-c051-4e71-815b-23c7fc4c2549/content
 \bibitem{CommunicationCommarison} Profanter, Stefan, Tekat, Ayhun, Dorofeev, Kirill, Rickert, Markus, Knoll, Alois. (2019). OPC UA versus ROS, DDS, and MQTT: Performance Evaluation of Industry 4.0 Protocols. 10.1109/ICIT.2019.8755050. 
 \bibitem{KortexUDP} Kinova Robotics Inc., Kortex TransportClient classes, https://docs.kinovarobotics.com/kortex/linked\_md/cpp\_transport\_router\_session\_notif.html\#transportclient-classes, last checked 08.02.2024.
+\bibitem{SLAKurven} Clearpath. Husky A200 UGV User Manual. url: https://clearpathrobotics.com/husky-documentation/ last checked am 21. 10. 2023.
 % \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
 % \bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
 % \bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
