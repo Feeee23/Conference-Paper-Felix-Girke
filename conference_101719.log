@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.9.22)  12 FEB 2024 10:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.9.22)  12 FEB 2024 10:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -361,77 +361,77 @@ File: Pictures/fig1.png Graphic file (type png)
 Package pdftex.def Info: Pictures/fig1.png  used on input line 228.
 (pdftex.def)             Requested size: 113.81102pt x 99.13274pt.
  [4 <./Pictures/SoCUeberZeit.pdf> <./Pictures/SpannungUeberZeit.pdf> <./Pictures/StormUeberZeit.pdf>]
-Underfull \hbox (badness 1571) in paragraph at lines 244--245
+Underfull \hbox (badness 1571) in paragraph at lines 245--246
 []\OT1/ptm/m/n/8 P. Marcon et al., "Communication technology for industry 4.0,"
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
 \OT1/ptm/m/n/8 (PIERS), St. Petersburg, Russia, 2017, pp. 1694-1697, doi:
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 245--246
+Underfull \hbox (badness 2913) in paragraph at lines 246--247
 []\OT1/ptm/m/n/8 Open Platform Communication Foundation, Unified Architecture,
  []
 
 
-Underfull \hbox (badness 6268) in paragraph at lines 246--247
+Underfull \hbox (badness 6268) in paragraph at lines 247--248
 []\OT1/ptm/m/n/8 M[]uhlbauer, Nikolas; Kirdan, Erkin; Pahl, Marc-Oliver; Waedt,
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 246--247
+Underfull \hbox (badness 1490) in paragraph at lines 247--248
 \OT1/ptm/m/n/8 Implementations. INFORMATIK 2020. DOI: 10.18420/inf2020[]34.
  []
 
 
-Underfull \hbox (badness 4096) in paragraph at lines 246--247
+Underfull \hbox (badness 4096) in paragraph at lines 247--248
 \OT1/ptm/m/n/8 on Industrial Automation and Control Systems. Karlsruhe. 28.
  []
 
 
-Underfull \hbox (badness 1796) in paragraph at lines 247--248
+Underfull \hbox (badness 1796) in paragraph at lines 248--249
 \OT1/ptm/m/n/8 Urbas, open62541 { der offene OPC UA Stack, https://publica-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
 \OT1/ptm/m/n/8 rest.fraunhofer.de/server/api/core/bitstreams/d860fd4c-c051-4e71-815b-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
 []\OT1/ptm/m/n/8 Profanter, Stefan, Tekat, Ayhun, Dorofeev, Kirill, Rickert,
  []
 
 
-Underfull \hbox (badness 7012) in paragraph at lines 248--249
+Underfull \hbox (badness 7012) in paragraph at lines 249--250
 \OT1/ptm/m/n/8 Markus, Knoll, Alois. (2019). OPC UA versus ROS, DDS,
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 248--249
+Underfull \hbox (badness 3364) in paragraph at lines 249--250
 \OT1/ptm/m/n/8 and MQTT: Performance Evaluation of Industry 4.0 Protocols.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 []\OT1/ptm/m/n/8 Kinova Robotics Inc., Kortex TransportClient classes,
  []
 
 
-Overfull \hbox (112.15634pt too wide) in paragraph at lines 249--250
+Overfull \hbox (112.15634pt too wide) in paragraph at lines 250--251
 \OT1/ptm/m/n/8 https://docs.kinovarobotics.com/kortex/linked[]md/cpp[]transport[]router[]session[]notif.html#transportclient-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--258
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 []\OT1/ptm/m/n/8 Clearpath. Husky A200 UGV User Manual. url:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--258
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 \OT1/ptm/m/n/8 https://clearpathrobotics.com/husky-documentation/ last checked
  []
 
@@ -463,7 +463,7 @@ Here is how much of TeX's memory you used:
  0 hyphenation exceptions out of 8191
  57i,11n,65p,567b,336s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmb8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmbi8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (5 pages, 751235 bytes).
+Output written on conference_101719.pdf (5 pages, 751857 bytes).
 PDF statistics:
  288 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
