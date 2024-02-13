@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1707736583 "/home/felix/Documents/Studium/uni UAS/Masterarbeit/Paper/Conference-LaTeX-template_10-17-19/conference_101719.tex" "conference_101719.pdf" "conference_101719" 1707736584 0
+["pdflatex"] 1707818931 "/home/felix/Documents/Studium/uni UAS/Masterarbeit/Paper/Conference-LaTeX-template_10-17-19/conference_101719.tex" "conference_101719.pdf" "conference_101719" 1707818932 0
   "/home/felix/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1706784672 80168 62bdaf2d33bf232150a16ddb6ae1015a ""
   "/home/felix/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1695387377 20963136 68b46a18abca85778b13f268b90cf326 ""
   "/home/felix/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc" 1706784671 4993 1194fb36dfcb11d9ae9802f2b00b60a3 ""
@@ -63,12 +63,13 @@
   "/home/felix/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def" 1695126724 29940 9473d58112bc8a88f5505b823a053dde ""
   "/home/felix/.miktex/texmfs/install/tex/latex/psnfss/ot1ptm.fd" 1706784665 1007 39eda417ef5837ce5e38661cfad2cedf ""
   "/home/felix/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty" 1695126703 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "/home/felix/Documents/Studium/uni UAS/Masterarbeit/Paper/Conference-LaTeX-template_10-17-19/conference_101719.tex" 1707736583 20965 24eae76cffe7cee9395ec2dbb2300c76 ""
+  "/home/felix/Documents/Studium/uni UAS/Masterarbeit/Paper/Conference-LaTeX-template_10-17-19/conference_101719.tex" 1707818931 20992 0367f4e629d12280690f486a73436932 ""
   "IEEEtran.cls" 1440632924 288304 b67b6fc6c2abb39f9b461923f5199343 ""
   "Pictures/EndladekuvenSLA.png" 1703414211 224478 06163a4fec26045599d29348231df93f ""
   "Pictures/KortexAPISpeed.pdf" 1707402010 13801 50eea22b6db0951f25643037f15c181f ""
   "Pictures/OPCUAMultipleDatenAufEinmal.pdf" 1707402011 11964 0f9a8d7d75649acc752398cfdf34ccfd ""
   "Pictures/OPCUASpeed1D.pdf" 1707402010 12246 980ef625d83e0dfb5d25fd5ba46f3b5b ""
+  "Pictures/PiAmKinova.jpeg" 1707818766 247340 03cb373d02fe6f22b83d7a4628cd1e1e ""
   "Pictures/PiGehaeuseVorne.jpeg" 1707204857 155155 0ef8316c14fe71691c27d60183055af1 ""
   "Pictures/PingDiagram.pdf" 1707402010 10454 156a1677ec89a233ee3ed45de1911b20 ""
   "Pictures/SoCUeberZeit.pdf" 1707731095 85966 25f5fdd5213f74ed0598240e69ff4e4c ""
@@ -76,8 +77,8 @@
   "Pictures/StormUeberZeit.pdf" 1707731102 74070 2d8da019cdf3bc16694e0443cb664067 ""
   "Pictures/dataConectorStructure.pdf" 1707295437 10951 08bc16b69862b61011743cbc12974338 ""
   "Pictures/fig1.png" 1571299972 4535 3b4c70b1b9361fad686e8d234c8fe506 ""
-  "conference_101719.aux" 1707736584 4317 a4f0c9e2f82c8dbfe544c5d5ef7cb3db "pdflatex"
-  "conference_101719.tex" 1707736583 20965 24eae76cffe7cee9395ec2dbb2300c76 ""
+  "conference_101719.aux" 1707818932 4317 a4f0c9e2f82c8dbfe544c5d5ef7cb3db "pdflatex"
+  "conference_101719.tex" 1707818931 20992 0367f4e629d12280690f486a73436932 ""
   (generated)
   "conference_101719.aux"
   "conference_101719.log"

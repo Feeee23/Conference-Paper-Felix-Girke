@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.9.22)  12 FEB 2024 12:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.9.22)  13 FEB 2024 11:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -284,12 +284,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: Pictures/PiGehaeuseVorne.jpeg Graphic file (type jpg)
 <use Pictures/PiGehaeuseVorne.jpeg>
 Package pdftex.def Info: Pictures/PiGehaeuseVorne.jpeg  used on input line 84.
-(pdftex.def)             Requested size: 113.81102pt x 133.5716pt.
-<Pictures/fig1.png, id=2, 82.1469pt x 71.5473pt>
-File: Pictures/fig1.png Graphic file (type png)
-<use Pictures/fig1.png>
-Package pdftex.def Info: Pictures/fig1.png  used on input line 84.
-(pdftex.def)             Requested size: 113.81102pt x 99.13274pt.
+(pdftex.def)             Requested size: 109.09085pt x 128.0374pt.
+<Pictures/PiAmKinova.jpeg, id=2, 806.26219pt x 863.47594pt>
+File: Pictures/PiAmKinova.jpeg Graphic file (type jpg)
+<use Pictures/PiAmKinova.jpeg>
+Package pdftex.def Info: Pictures/PiAmKinova.jpeg  used on input line 84.
+(pdftex.def)             Requested size: 119.54391pt x 128.0374pt.
 
 
 pdfTeX warning: pdflatex (file ./Pictures/dataConectorStructure.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
@@ -322,7 +322,7 @@ File: Pictures/OPCUAMultipleDatenAufEinmal.pdf Graphic file (type pdf)
 <use Pictures/OPCUAMultipleDatenAufEinmal.pdf>
 Package pdftex.def Info: Pictures/OPCUAMultipleDatenAufEinmal.pdf  used on input line 143.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
- [2 <./Pictures/PiGehaeuseVorne.jpeg> <./Pictures/fig1.png (PNG copy)> <./Pictures/dataConectorStructure.pdf> <./Pictures/KortexAPISpeed.pdf> <./Pictures/OPCUASpeed1D.pdf>]
+ [2 <./Pictures/PiGehaeuseVorne.jpeg> <./Pictures/PiAmKinova.jpeg> <./Pictures/dataConectorStructure.pdf> <./Pictures/KortexAPISpeed.pdf> <./Pictures/OPCUASpeed1D.pdf>]
 <Pictures/EndladekuvenSLA.png, id=101, 895.09406pt x 588.69937pt>
 File: Pictures/EndladekuvenSLA.png Graphic file (type png)
 <use Pictures/EndladekuvenSLA.png>
@@ -344,6 +344,7 @@ File: Pictures/StormUeberZeit.pdf Graphic file (type pdf)
 Package pdftex.def Info: Pictures/StormUeberZeit.pdf  used on input line 187.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
  [3 <./Pictures/PingDiagram.pdf> <./Pictures/OPCUAMultipleDatenAufEinmal.pdf> <./Pictures/EndladekuvenSLA.png (PNG copy)>]
+<Pictures/fig1.png, id=167, 82.1469pt x 71.5473pt>
 File: Pictures/fig1.png Graphic file (type png)
 <use Pictures/fig1.png>
 Package pdftex.def Info: Pictures/fig1.png  used on input line 211.
@@ -360,7 +361,7 @@ File: Pictures/fig1.png Graphic file (type png)
 <use Pictures/fig1.png>
 Package pdftex.def Info: Pictures/fig1.png  used on input line 223.
 (pdftex.def)             Requested size: 113.81102pt x 99.13274pt.
- [4 <./Pictures/SoCUeberZeit.pdf> <./Pictures/SpannungUeberZeit.pdf> <./Pictures/StormUeberZeit.pdf>]
+ [4 <./Pictures/SoCUeberZeit.pdf> <./Pictures/SpannungUeberZeit.pdf> <./Pictures/StormUeberZeit.pdf> <./Pictures/fig1.png (PNG copy)>]
 Underfull \hbox (badness 1571) in paragraph at lines 240--241
 []\OT1/ptm/m/n/8 P. Marcon et al., "Communication technology for industry 4.0,"
  []
@@ -445,17 +446,17 @@ L3 programming layer <2023-08-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4264 strings out of 477183
- 68126 string characters out of 5809538
+ 4271 strings out of 477183
+ 68342 string characters out of 5809538
  1935807 words of memory out of 5000000
- 25518 multiletter control sequences out of 15000+600000
+ 25525 multiletter control sequences out of 15000+600000
  592768 words of font info for 101 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  57i,11n,65p,567b,336s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmb8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmbi8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (5 pages, 751188 bytes).
+Output written on conference_101719.pdf (5 pages, 998731 bytes).
 PDF statistics:
- 288 PDF objects out of 1000 (max. 8388607)
+ 289 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
