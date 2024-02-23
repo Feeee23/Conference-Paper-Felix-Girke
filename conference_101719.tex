@@ -188,8 +188,10 @@ The estimated SoC is an moving average over 100 values but still there is some n
     \caption{Measured potential and current over one discharge cycle of the Husky battery}
     \label{fig:SpannungStromUeberZeit}
 \end{figure}
-There are also big spikes in the data around 180 and 600 minutes. At the same time there are spikes in the current but not in the potential.
-For this reason it is likely that this is based on measuring error. Because there is no documentation on which sensor Clearpath has used or how the measures are made it can't be replicated.
+There are also big spikes in the data around 150, 210 and 480 minutes. At the same time there are spikes in the current but not in the potential.
+For this reason it is likely that this is based on measuring error.
+At 270 minutes there is also a big spike in the current but because there is also a spike in the potential of the battery, the the SoC hardly changes.
+Because there is no documentation on which sensor Clearpath has used or how the measures are made it can't be replicated.
 But the the new SoC estimation is much better than the old one and an underestimation of the SoC leads to an bigger safety margin which is also good.
 \section{Digital twin}
 The digital twin is build in Isaac Sim.
