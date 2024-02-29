@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.9.22)  29 FEB 2024 16:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.9.22)  29 FEB 2024 17:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -580,7 +580,7 @@ Here is how much of TeX's memory you used:
  0 hyphenation exceptions out of 8191
  57i,8n,65p,567b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmb8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmbi8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (6 pages, 8870079 bytes).
+Output written on conference_101719.pdf (6 pages, 8870097 bytes).
 PDF statistics:
  304 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

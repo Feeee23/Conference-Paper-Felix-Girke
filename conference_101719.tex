@@ -95,14 +95,14 @@ To add flexibility the robot data isn't collected on one central server but ever
 Because of this decentralized approach every client can choose to connect only to the servers it needs to.
 For example if only one of the robot arms is mounted on the Husky the digital twin can connect to only this one robot arm while the other robot arm can be used otherwise.
 \section{State of the art}
-The Task of connecting different robots together to form a network has been attempted by different Teams.
+The task of connecting different robots together to form a network has been attempted by different teams.
 In \cite{SotaCAN} three robotic arms have been connected using CAN for a cooperative Task.
 The translation between the robots and the local CAN network is achieved by using a microcontroller on every robot.\\
-A similar Network was build in \cite{SotaROS} but here ROS is used as an communication protocol.
-Unlike in the first paper the robots aren't the same but they all have native support for ROS so there is no need for a translation layer between the robot an the network.\\
+A similar network was build in \cite{SotaROS} but here ROS is used as an communication protocol.
+Unlike in the first paper the robots differ from each other but they all possess native support for ROS so there is no need for a translation layer between the robot and the network.\\
 To create more flexibility in such a network in \cite{StoaROStoOPCUA} a Interoperability between ROS and a OPC-UA is achieved by integrating them into a local cloud framework.\\
 A completely different approach was made in \cite{SotaRaconteur} and \cite{SotaFusion}.
-Here a middleware was developed to make a network for the different heterogeneous robots.
+Here a middleware was developed to build a network for the different heterogeneous robots.
 While the Robot Raconteur software from \cite{SotaRaconteur} is open source, the CorteX software from \cite{SotaFusion} is not.
 Furthermore CorteX is build specifically for a robot system working in a Fusion Reactor while Robot Raconteur is build to be an ecosystem for different robots.
 % -- Robot Raconteur Middleware for robots (https://ieeexplore.ieee.org/abstract/document/10260569)\\
@@ -301,14 +301,14 @@ Normally they get their Messages like push notification via a Google or Apple se
 Without an public IP-Address it is not possible to reach the VPN server.
 Alternately a software like ngrok can be used to to make a tunnel to the data connector. Therefore no public IP-Address is needed but for every data connector a separate tunnel is required.
 \section{Discussion}
-Compared to the network that was build in \cite{SotaCAN} the OPC-UA standard has much more features and allows a remote access.
-Furthermore with the data connector it is possible to get different robots into the same network.
-This is also a advantages compared to \cite{SotaROS} because the robots don't need to be able to communicate via ROS because the data connector translates between the robot and the network.\\
+Compared to the network that was build in \cite{SotaCAN} the OPC-UA standard has significantly more features and allows remote access.
+Furthermore with the data connector it is possible to incorporate different robots into the same network.
+This is also an advantages compared to \cite{SotaROS} because the robots don't need to be able to communicate via ROS because the data connector translates between the robot and the network.\\
 The interoperability between ROS and OPC-UA from \cite{StoaROStoOPCUA} is extended with the data connector.
-Including with the Kortex API a second communication standard and providing easy extendability for even more.\\
-The middleware from \cite{SotaFusion} is proprietary and has no features which OPC-UA doesn't have.
-The most similar is \cite{SotaRaconteur} because it is an open source middleware.
-But while OPC-UA is an industry standard, Robot Raconteur is relative unknown.
+With the Kortex API a second communication standard is added and extendability for even more standards is easily provided.\\
+The middleware from \cite{SotaFusion} is proprietary and provides no further features over OPC-UA.
+The most similar is \cite{SotaRaconteur} due to it is an open source middleware.
+While OPC-UA is an industry standard, Robot Raconteur is lesser known.
 \section{Conclusion}
 It could be shown in this paper that it is possible to create an decentralized and interoperable network using the OPC-UA standard (Fig. \ref{fig:AufbauBilder}).\\
 
