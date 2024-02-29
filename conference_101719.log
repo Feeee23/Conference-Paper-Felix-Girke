@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.9.22)  29 FEB 2024 11:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.9.22)  29 FEB 2024 12:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -279,7 +279,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
  (/home/felix/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 1430) in paragraph at lines 93--103
+Underfull \hbox (badness 1430) in paragraph at lines 93--107
 \OT1/ptm/m/n/10 To create more flexibility in such a network in [3] a
  []
 
@@ -290,12 +290,12 @@ Underfull \hbox (badness 1430) in paragraph at lines 93--103
 <Pictures/PiGehaeuseVorne.jpeg, id=10, 537.50812pt x 630.85687pt>
 File: Pictures/PiGehaeuseVorne.jpeg Graphic file (type jpg)
 <use Pictures/PiGehaeuseVorne.jpeg>
-Package pdftex.def Info: Pictures/PiGehaeuseVorne.jpeg  used on input line 136.
+Package pdftex.def Info: Pictures/PiGehaeuseVorne.jpeg  used on input line 135.
 (pdftex.def)             Requested size: 109.09085pt x 128.0374pt.
 <Pictures/PiAmKinova.jpeg, id=11, 806.26219pt x 863.47594pt>
 File: Pictures/PiAmKinova.jpeg Graphic file (type jpg)
 <use Pictures/PiAmKinova.jpeg>
-Package pdftex.def Info: Pictures/PiAmKinova.jpeg  used on input line 136.
+Package pdftex.def Info: Pictures/PiAmKinova.jpeg  used on input line 135.
 (pdftex.def)             Requested size: 119.54391pt x 128.0374pt.
 
 
@@ -303,200 +303,200 @@ pdfTeX warning: pdflatex (file ./Pictures/dataConectorStructure.pdf): PDF inclus
 <Pictures/dataConectorStructure.pdf, id=12, 231.74579pt x 111.29579pt>
 File: Pictures/dataConectorStructure.pdf Graphic file (type pdf)
 <use Pictures/dataConectorStructure.pdf>
-Package pdftex.def Info: Pictures/dataConectorStructure.pdf  used on input line 143.
+Package pdftex.def Info: Pictures/dataConectorStructure.pdf  used on input line 142.
 (pdftex.def)             Requested size: 231.74521pt x 111.2955pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--166
+Underfull \hbox (badness 10000) in paragraph at lines 162--165
 
  []
 
 <Pictures/KortexAPISpeed.pdf, id=13, 462.52798pt x 346.89601pt>
 File: Pictures/KortexAPISpeed.pdf Graphic file (type pdf)
 <use Pictures/KortexAPISpeed.pdf>
-Package pdftex.def Info: Pictures/KortexAPISpeed.pdf  used on input line 168.
+Package pdftex.def Info: Pictures/KortexAPISpeed.pdf  used on input line 167.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
 [2 <./Pictures/PiGehaeuseVorne.jpeg> <./Pictures/PiAmKinova.jpeg> <./Pictures/dataConectorStructure.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 176--179
+Underfull \hbox (badness 10000) in paragraph at lines 175--178
 
  []
 
 <Pictures/OPCUASpeed1D.pdf, id=26, 462.52798pt x 346.89601pt>
 File: Pictures/OPCUASpeed1D.pdf Graphic file (type pdf)
 <use Pictures/OPCUASpeed1D.pdf>
-Package pdftex.def Info: Pictures/OPCUASpeed1D.pdf  used on input line 181.
+Package pdftex.def Info: Pictures/OPCUASpeed1D.pdf  used on input line 180.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--189
+Underfull \hbox (badness 10000) in paragraph at lines 184--188
 
  []
 
 <Pictures/PingDiagram.pdf, id=27, 462.52798pt x 346.89601pt>
 File: Pictures/PingDiagram.pdf Graphic file (type pdf)
 <use Pictures/PingDiagram.pdf>
-Package pdftex.def Info: Pictures/PingDiagram.pdf  used on input line 191.
+Package pdftex.def Info: Pictures/PingDiagram.pdf  used on input line 190.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
 <Pictures/OPCUAMultipleDatenAufEinmal.pdf, id=28, 462.52798pt x 346.89601pt>
 File: Pictures/OPCUAMultipleDatenAufEinmal.pdf Graphic file (type pdf)
 <use Pictures/OPCUAMultipleDatenAufEinmal.pdf>
-Package pdftex.def Info: Pictures/OPCUAMultipleDatenAufEinmal.pdf  used on input line 197.
+Package pdftex.def Info: Pictures/OPCUAMultipleDatenAufEinmal.pdf  used on input line 196.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
 [3 <./Pictures/KortexAPISpeed.pdf> <./Pictures/OPCUASpeed1D.pdf> <./Pictures/PingDiagram.pdf> <./Pictures/OPCUAMultipleDatenAufEinmal.pdf>]
 <Pictures/EndladekuvenSLA.png, id=164, 895.09406pt x 588.69937pt>
 File: Pictures/EndladekuvenSLA.png Graphic file (type png)
 <use Pictures/EndladekuvenSLA.png>
-Package pdftex.def Info: Pictures/EndladekuvenSLA.png  used on input line 220.
+Package pdftex.def Info: Pictures/EndladekuvenSLA.png  used on input line 219.
 (pdftex.def)             Requested size: 227.62204pt x 149.70763pt.
 
-Underfull \hbox (badness 1755) in paragraph at lines 231--233
+Underfull \hbox (badness 1755) in paragraph at lines 230--232
 []\OT1/ptm/m/n/10 To validate the estimation the battery is performs a
  []
 
 
-Underfull \hbox (badness 3635) in paragraph at lines 231--233
+Underfull \hbox (badness 3635) in paragraph at lines 230--232
 \OT1/ptm/m/n/10 complete discharge cycle and the estimated SoC, the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--233
+Underfull \hbox (badness 10000) in paragraph at lines 230--232
 
  []
 
 <Pictures/SoCUeberZeit.pdf, id=165, 462.52798pt x 346.89601pt>
 File: Pictures/SoCUeberZeit.pdf Graphic file (type pdf)
 <use Pictures/SoCUeberZeit.pdf>
-Package pdftex.def Info: Pictures/SoCUeberZeit.pdf  used on input line 235.
+Package pdftex.def Info: Pictures/SoCUeberZeit.pdf  used on input line 234.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
 <Pictures/SpannungUeberZeit.pdf, id=166, 462.52798pt x 346.89601pt>
 File: Pictures/SpannungUeberZeit.pdf Graphic file (type pdf)
 <use Pictures/SpannungUeberZeit.pdf>
-Package pdftex.def Info: Pictures/SpannungUeberZeit.pdf  used on input line 244.
+Package pdftex.def Info: Pictures/SpannungUeberZeit.pdf  used on input line 243.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
 <Pictures/StormUeberZeit.pdf, id=167, 462.52798pt x 346.89601pt>
 File: Pictures/StormUeberZeit.pdf Graphic file (type pdf)
 <use Pictures/StormUeberZeit.pdf>
-Package pdftex.def Info: Pictures/StormUeberZeit.pdf  used on input line 244.
+Package pdftex.def Info: Pictures/StormUeberZeit.pdf  used on input line 243.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
 <Pictures/DigitalerTwinNachgestellt1.JPG, id=168, 4047.12pt x 3035.34pt>
 File: Pictures/DigitalerTwinNachgestellt1.JPG Graphic file (type jpg)
 <use Pictures/DigitalerTwinNachgestellt1.JPG>
-Package pdftex.def Info: Pictures/DigitalerTwinNachgestellt1.JPG  used on input line 271.
+Package pdftex.def Info: Pictures/DigitalerTwinNachgestellt1.JPG  used on input line 270.
 (pdftex.def)             Requested size: 113.81102pt x 85.31314pt.
 <Pictures/DigitalerTwinNachgestellt2.png, id=169, 855.195pt x 481.8pt>
 File: Pictures/DigitalerTwinNachgestellt2.png Graphic file (type png)
 <use Pictures/DigitalerTwinNachgestellt2.png>
-Package pdftex.def Info: Pictures/DigitalerTwinNachgestellt2.png  used on input line 271.
+Package pdftex.def Info: Pictures/DigitalerTwinNachgestellt2.png  used on input line 270.
 (pdftex.def)             Requested size: 113.81102pt x 64.11388pt.
 [4 <./Pictures/EndladekuvenSLA.png (PNG copy)> <./Pictures/SoCUeberZeit.pdf> <./Pictures/SpannungUeberZeit.pdf> <./Pictures/StormUeberZeit.pdf>]
 <Pictures/ZugZugriff.png, id=270, 910.90312pt x 708.39656pt>
 File: Pictures/ZugZugriff.png Graphic file (type png)
 <use Pictures/ZugZugriff.png>
-Package pdftex.def Info: Pictures/ZugZugriff.png  used on input line 283.
+Package pdftex.def Info: Pictures/ZugZugriff.png  used on input line 282.
 (pdftex.def)             Requested size: 227.62204pt x 177.01222pt.
 
-Underfull \hbox (badness 7099) in paragraph at lines 301--302
+Underfull \hbox (badness 7099) in paragraph at lines 300--301
 []\OT1/ptm/m/n/8 A. Tripathy, J. van Deventer, C. Paniagua and J. Delsing,
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 302.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 301.
 (/home/felix/.miktex/texmfs/install/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 2126) in paragraph at lines 302--303
+Underfull \hbox (badness 2126) in paragraph at lines 301--302
 []\OT1/ptm/m/n/8 J. D. Wason and J. T. Wen, "Robot Raconteur\TS1/ptm/m/n/8 ®\OT1/ptm/m/n/8 : Updates on
  []
 
 
-Underfull \hbox (badness 3386) in paragraph at lines 302--303
+Underfull \hbox (badness 3386) in paragraph at lines 301--302
 \OT1/ptm/m/n/8 an Open Source Interoperable Middleware for Robotics," 2023
  []
 
 
-Underfull \hbox (badness 1824) in paragraph at lines 302--303
+Underfull \hbox (badness 1824) in paragraph at lines 301--302
 \OT1/ptm/m/n/8 IEEE 19th International Conference on Automation Science and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 []\OT1/ptm/m/n/8 Caliskanelli I, Goodliffe M, Whiffin C, Xymitoulias M,
  []
 
 
-Underfull \hbox (badness 6461) in paragraph at lines 303--304
+Underfull \hbox (badness 6461) in paragraph at lines 302--303
 \OT1/ptm/m/n/8 Whittaker E, Verma S, Skilton R. Engineering Interoperable,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 \OT1/ptm/m/n/8 Plug-and-Play, Distributed, Robotic Control Systems for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 \OT1/ptm/m/n/8 Futureproof Fusion Power Plants. Robotics. 2021; 10(3):108.
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 305--306
+Underfull \hbox (badness 1571) in paragraph at lines 304--305
 []\OT1/ptm/m/n/8 P. Marcon et al., "Communication technology for industry 4.0,"
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
 \OT1/ptm/m/n/8 (PIERS), St. Petersburg, Russia, 2017, pp. 1694-1697, doi:
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 306--307
+Underfull \hbox (badness 2913) in paragraph at lines 305--306
 []\OT1/ptm/m/n/8 Open Platform Communication Foundation, Unified Architecture,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
 []\OT1/ptm/m/n/8 Profanter, Stefan, Tekat, Ayhun, Dorofeev, Kirill, Rickert,
  []
 
 
-Underfull \hbox (badness 7012) in paragraph at lines 307--308
+Underfull \hbox (badness 7012) in paragraph at lines 306--307
 \OT1/ptm/m/n/8 Markus, Knoll, Alois. (2019). OPC UA versus ROS, DDS,
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 307--308
+Underfull \hbox (badness 3364) in paragraph at lines 306--307
 \OT1/ptm/m/n/8 and MQTT: Performance Evaluation of Industry 4.0 Protocols.
  []
 
 
-Underfull \hbox (badness 1796) in paragraph at lines 308--309
+Underfull \hbox (badness 1796) in paragraph at lines 307--308
 \OT1/ptm/m/n/8 Urbas, open62541 { der offene OPC UA Stack, https://publica-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--309
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
 \OT1/ptm/m/n/8 rest.fraunhofer.de/server/api/core/bitstreams/d860fd4c-c051-4e71-815b-
  []
 
 [5 <./Pictures/DigitalerTwinNachgestellt1.JPG> <./Pictures/DigitalerTwinNachgestellt2.png> <./Pictures/ZugZugriff.png (PNG copy)>]
-Underfull \hbox (badness 6268) in paragraph at lines 309--310
+Underfull \hbox (badness 6268) in paragraph at lines 308--309
 []\OT1/ptm/m/n/8 M[]uhlbauer, Nikolas; Kirdan, Erkin; Pahl, Marc-Oliver; Waedt,
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 309--310
+Underfull \hbox (badness 1490) in paragraph at lines 308--309
 \OT1/ptm/m/n/8 Implementations. INFORMATIK 2020. DOI: 10.18420/inf2020[]34.
  []
 
 
-Underfull \hbox (badness 4096) in paragraph at lines 309--310
+Underfull \hbox (badness 4096) in paragraph at lines 308--309
 \OT1/ptm/m/n/8 on Industrial Automation and Control Systems. Karlsruhe. 28.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
 []\OT1/ptm/m/n/8 Clearpath. Husky A200 UGV User Manual. url:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
 \OT1/ptm/m/n/8 https://clearpathrobotics.com/husky-documentation/ last checked
  []
 
