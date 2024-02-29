@@ -81,7 +81,12 @@ Robotics, Digital Twins, System of Systems, Industry 4.0, Industry 5.0, Society 
 \section{Introduction}
 Every robot manufacturer develops their own way of communication with their robots.
 This leads to problems when trying to build a robot system with multiple robots from different brands.
-In this example two robot arms from Kinova are to be mounted on a Husky mobile robot platform from Clearpath.
+In this example two robot arms from Kinova are to be mounted on a Husky mobile robot platform from Clearpath (Fig. \ref{fig:TitelBild}).
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=8.9cm]{Pictures/TitelBild.png}}
+    \caption{Robot system (bottom left) with the digital twin (top left) and remote access (right)}
+    \label{fig:TitelBild}
+\end{figure}
 The Husky uses Robot Operating System (ROS) to communicate internally while the robot arms use the Kortex API from Kinova.
 To combine them into one digital twin they should be on one standard.
 For this a data connector is developed on the Open Platform Communication Unified Architecture (OPC-UA) standard.
@@ -132,14 +137,16 @@ The Husky PC runs ROS, so it is possible to create an ROS package with an OPC-UA
 The Kinova robotic arms on the other Hand it is not possible to install software, so a Raspberry Pi is used as a data connector which gets the data from the robot and makes it accessible via an OPC-UA server.\\
 As Hardware for the stand-alone device a Raspberry PI 3B+ is used due to it's very versatile nature. It can connect to robots via Ethernet, USB or various GPIO pins.
 Furthermore it is powerful enough to handle an OPC-UA server and communicate to a robot at the same time.
-Because of its size it can be mounted directly on the Kinova robot without interfering the movement of the robot (Fig. \ref{fig:dataConectorPic}).
+Because of its size it can be mounted directly on the Kinova robot without interfering the movement of the robot (Fig. \ref{fig:dataConectorPic}).\\
+
 \begin{figure}[htbp]
-    \centerline{\includegraphics[height=4.5cm]{Pictures/PiGehaeuseVorne.jpeg}\hspace{0.1cm}\includegraphics[height=4.5cm]{Pictures/PiAmKinova.jpeg}}
-    \caption{The data connector mounted directly on the Kinova robot}
+    \centerline{\includegraphics[height=4.9cm]{Pictures/PiGehaeuseVorne.jpeg}\hspace{0.1cm}\includegraphics[height=4.9cm]{Pictures/PiAmKinova.jpeg}}
+    \caption{The data connector (LHS) mounted directly on the Kinova robot (RHS)}
     \label{fig:dataConectorPic}
 \end{figure}
 The data connector can even be powered by the USB ports of the Kinova robot, so no additional power source is needed.\\
-The Code is split into three main parts (Fig. \ref{fig:dataConectorStructure}).
+The Code is split into three main parts (Fig. \ref{fig:dataConectorStructure}).\\
+
 \begin{figure}[htbp]
     \centerline{\includegraphics{Pictures/dataConectorStructure.pdf}}
     \caption{Code structure of the data connector}
@@ -166,7 +173,7 @@ With UDP as communication standard the Raspberry Pi can get the up to 1400 datas
 That is even more than the 1000 datasets per second, that Kinova claims \cite{KortexUDP}.\\
 
 \begin{figure}[htbp]
-    \centerline{\includegraphics[width=8cm]{Pictures/KortexAPISpeed.pdf}}
+    \centerline{\includegraphics[width=9.1cm]{Pictures/KortexAPISpeed.pdf}}
     \caption{Frequency with which the Raspberry Pi 3B+ can get data from the Kinova arm}
     \label{fig:KortexAPISpeed}
 \end{figure}
@@ -179,7 +186,7 @@ RTL8152 Fast Ethernet Adapter) and an high end Tower PC (Intel 13.Gen Core i9-13
 The PCs and the data connector are all connected to the same Router (tp-link Archer C80 AC1900 MU-MiMO).\\
 
 \begin{figure}[htbp]
-    \centerline{\includegraphics[width=8cm]{Pictures/OPCUASpeed1D.pdf}}
+    \centerline{\includegraphics[width=9.1cm]{Pictures/OPCUASpeed1D.pdf}}
     \caption{Frequency with which data can be requested from the OPC-UA server}
     \label{fig:OPCUASpeed1D}
 \end{figure}
@@ -189,13 +196,13 @@ On the Tower PC the python library is even faster than the C-library on the Lapt
 If these results are compared to the ping between these PCs and the data connector (Fig. \ref{fig:PingDiagram}) it can be concluded that the python library on the Tower PC is running close to the actual limit of the network.\\
 
 \begin{figure}[htbp]
-    \centerline{\includegraphics[width=8cm]{Pictures/PingDiagram.pdf}}
+    \centerline{\includegraphics[width=9cm]{Pictures/PingDiagram.pdf}}
     \caption{Ping to the data connector}
     \label{fig:PingDiagram}
 \end{figure}
 If multiple clients are started in parallel on the Tower PC there is a slight decrease in the frequency with which the data can be requested from the data connector (Fig. \ref{fig:OPCUASpeed1D}).\\
 \begin{figure}[htbp]
-    \centerline{\includegraphics[width=8cm]{Pictures/OPCUAMultipleDatenAufEinmal.pdf}}
+    \centerline{\includegraphics[width=9.1cm]{Pictures/OPCUAMultipleDatenAufEinmal.pdf}}
     \caption{Frequency with which different datasets can be requested from the OPC-UA server}
     \label{fig:OPCUAMultipleDatenAufEinmal}
 \end{figure}
@@ -216,9 +223,10 @@ Because of this one sided tuning it shows only around 50\% SoC with an full batt
 To create a better estimation of the SoC a ROS package is created that uses the measured current and potential of the battery and publishes an estimation of the SoC tuned for the used SLA battery.
 This data is also published on the OPC-UA server.
 \subsection{Estimating the SoC}
-In the documentation of the Husky Fig. \ref{fig:EndladekuvenSLA} can be found.
+In the documentation of the Husky Fig. \ref{fig:EndladekuvenSLA} can be found.\\
+
 \begin{figure}[htbp]
-    \centerline{\includegraphics[width=8cm]{Pictures/EndladekuvenSLA.png}}
+    \centerline{\includegraphics[width=9.2cm]{Pictures/EndladekuvenSLA.png}}
     \caption{Discharge time over different currents for the SLA battery of the Husky \cite[p.21]{SLAKurven}}
     \label{fig:EndladekuvenSLA}
 \end{figure}
@@ -233,7 +241,7 @@ To validate the estimation the battery is performs a complete discharge cycle an
 In Fig. \ref{fig:SoCUeberZeit} is the estimation of the SoC over one discharge cycle shown.\\
 
 \begin{figure}[htbp]
-    \centerline{\includegraphics[width=8cm]{Pictures/SoCUeberZeit.pdf}}
+    \centerline{\includegraphics[width=9cm]{Pictures/SoCUeberZeit.pdf}}
     \caption{Comparison between the theoretical SoC and the estimated SoC over one discharge cycle}
     \label{fig:SoCUeberZeit}
 \end{figure}
@@ -242,8 +250,8 @@ First of all it is visible that the battery don't start at 100\% it is likely th
 The estimated SoC is an moving average over 100 values but still there is some noise in the data.
 Thats because the measured potential and current are very noisy (Fig. \ref{fig:SpannungStromUeberZeit}).
 \begin{figure}[htbp]
-    \centerline{\includegraphics[width=4cm]{Pictures/SpannungUeberZeit.pdf}\includegraphics[width=4cm]{Pictures/StormUeberZeit.pdf}}
-    \caption{Measured potential and current over one discharge cycle of the Husky battery}
+    \centerline{\includegraphics[width=4.5cm]{Pictures/SpannungUeberZeit.pdf}\includegraphics[width=4.5cm]{Pictures/StormUeberZeit.pdf}}
+    \caption{Measured potential (LHS) and current (RHS) over one discharge cycle of the Husky battery}
     \label{fig:SpannungStromUeberZeit}
 \end{figure}
 There are also big spikes in the data around 150, 210 and 480 minutes.
@@ -270,8 +278,8 @@ So the non-visible data like current or temperature can be visualized.
 Even if you don't use one of the robots in the robot system it is still possible to connect to the robot to keep an eye on its vitals.\\
 To make the digital twin more realistic you can choose in the GUI to load a 3D scan of the university as an environment for the digital twin (Fig. \ref{fig:CompareDigitalReal}).
 \begin{figure}[htbp]
-    \centerline{\includegraphics[width=4cm]{Pictures/DigitalerTwinNachgestellt1.JPG}\includegraphics[width=4cm]{Pictures/DigitalerTwinNachgestellt2.png}}
-    \caption{Comparison of the digital twin (left) and the real robot (right)}
+    \centerline{\includegraphics[height=3cm]{Pictures/DigitalerTwinNachgestellt1.JPG}\hspace{0.1cm}\includegraphics[height=3cm]{Pictures/DigitalerTwinNachgestellt2.png}}
+    \caption{Comparison of the digital twin (LHS) and the real robot (RHS)}
     \label{fig:CompareDigitalReal}
 \end{figure}
 
@@ -280,9 +288,10 @@ To monitor the robot system from everywhere a remote access to the data connecto
 For this an mobile 5G router is mounted on the Husky. To this Router all the data connectors are connected.
 On the router an VPN is installed, so to connect to a data connector a client has to connect to the router via the VPN first.
 Afterwards the connection to the data connector is identical as before.
-In Fig. \ref{fig:RemoteAccess} an example is shown where the client is accessing the battery data of the Husky from a train while the Husky is in the lab of the university.
+In Fig. \ref{fig:RemoteAccess} an example is shown where the client is accessing the battery data of the Husky from a train while the Husky is in the lab of the university.\\
+
 \begin{figure}[htbp]
-    \centerline{\includegraphics[width=8cm]{Pictures/ZugZugriff.png}}
+    \centerline{\includegraphics[width=8.9cm]{Pictures/ZugZugriff.png}}
     \caption{Example of the remote access to the data connector of the robot in the university lab from a Train}
     \label{fig:RemoteAccess}
 \end{figure}
@@ -292,8 +301,22 @@ Normally they get their Messages like push notification via a Google or Apple se
 Without an public IP-Address it is not possible to reach the VPN server.
 Alternately a software like ngrok can be used to to make a tunnel to the data connector. Therefore no public IP-Address is needed but for every data connector a separate tunnel is required.
 \section{Discussion}
+Compared to the network that was build in \cite{SotaCAN} the OPC-UA standard has much more features and allows a remote access.
+Furthermore with the data connector it is possible to get different robots into the same network.
+This is also a advantages compared to \cite{SotaROS} because the robots don't need to be able to communicate via ROS because the data connector translates between the robot and the network.\\
+The interoperability between ROS and OPC-UA from \cite{StoaROStoOPCUA} is extended with the data connector.
+Including with the Kortex API a second communication standard and providing easy extendability for even more.\\
+The middleware from \cite{SotaFusion} is proprietary and has no features which OPC-UA doesn't have.
+The most similar is \cite{SotaRaconteur} because it is an open source middleware.
+But while OPC-UA is an industry standard, Robot Raconteur is relative unknown.
 \section{Conclusion}
-It could be shown in this paper that it is possible to create an decentralized and interoperable network using the OPC-UA standard.
+It could be shown in this paper that it is possible to create an decentralized and interoperable network using the OPC-UA standard (Fig. \ref{fig:AufbauBilder}).\\
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=8.9cm]{Pictures/AufbauBilder.png}}
+    \caption{Visualization of the data structure using a real example}
+    \label{fig:AufbauBilder}
+\end{figure}
 Furthermore with the data connector the whole setup is very flexible and can be added to every Kinova robot arm using the Kortex API.
 It is also possible to expand the data connector to work with many different robots from different manufactures.
 The shown digital twin proves it is easy to connect to different robots when they are all using the same standard and the performance tests have shown this standard is fast enough to deliver a accurate digital twin model.
