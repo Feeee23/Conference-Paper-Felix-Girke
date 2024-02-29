@@ -235,6 +235,11 @@ INPUT ./Pictures/ZugZugriff.png
 INPUT ./Pictures/ZugZugriff.png
 INPUT ./Pictures/ZugZugriff.png
 INPUT ./Pictures/ZugZugriff.png
+INPUT /home/felix/.miktex/texmfs/install/tex/latex/psnfss/ts1ptm.fd
+INPUT /home/felix/.miktex/texmfs/install/tex/latex/psnfss/ts1ptm.fd
+INPUT /home/felix/.miktex/texmfs/install/tex/latex/psnfss/ts1ptm.fd
+INPUT /home/felix/.miktex/texmfs/install/fonts/tfm/adobe/times/ptmr8c.tfm
+INPUT /home/felix/.miktex/texmfs/install/fonts/vf/adobe/times/ptmr8c.vf
 INPUT conference_101719.aux
 INPUT /home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb
 INPUT /home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb

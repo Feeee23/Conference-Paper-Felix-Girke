@@ -90,6 +90,23 @@ To add flexibility the robot data isn't collected on one central server but ever
 Because of this decentralized approach every client can choose to connect only to the servers it needs to.
 For example if only one of the robot arms is mounted on the Husky the digital twin can connect to only this one robot arm while the other robot arm can be used otherwise.
 \section{State of the art}
+The Task of connecting different robots together to form a network has been attempted by different Teams.
+In \cite{SotaCAN} three robotic arms have been connected using CAN for a cooperative Task.
+The translation between the robots and the local CAN network is achieved by using a microcontroller on every robot.\\
+A similar Network was build in \cite{SotaROS} but here ROS is used as an communication protocol.
+Unlike in the first paper the robots aren't the same but they all have native support for ROS so there is no need for a translation layer between the robot an the network.\\
+To create more flexibility in such a network in \cite{StoaROStoOPCUA} a Interoperability between ROS and a OPC-UA is achieved by integrating them into a local cloud framework.\\
+A completely different approach was made in \cite{SotaRaconteur} and \cite{SotaFusion}.
+Here a middleware was developed to make a network for the different heterogeneous robots.
+While the Robot Raconteur software from \cite{SotaRaconteur} is open source, the CorteX software from \cite{SotaFusion} is not.
+Furthermore CorteX is build specifically for a robot system working in a Fusion Reactor while Robot Raconteur is build to be an ecosystem for different robots.
+% -- Robot Raconteur Middleware for robots (https://ieeexplore.ieee.org/abstract/document/10260569)\\
+% -- CorteX, plug and play, distributed system of systems, Fusions Reactor, ähnlich OPC UA aber mit control (https://www.mdpi.com/2218-6581/10/3/108)\\
+% -- Interoperability ROS und OPC-UA (https://ieeexplore.ieee.org/abstract/document/9816962)\\
+% -- Can Bus, 3 Arme, dezentral, mikocontroller, lokal (https://link.springer.com/chapter/10.1007/978-981-15-5281-6\_30)\\
+
+% --heterogen Robot network, all using ros (https://ieeexplore.ieee.org/abstract/document/9707460)\\
+% homogen Robot network peer to peer, find path (https://ieeexplore.ieee.org/document/9196672)\\
 \section{Advantages of OPC-UA}
 The fourth industrial revolution is about making machines and products "smart" to make decisions and control the manufacturing process on their own \cite{Industry4}.
 To make these decisions they need to be connected to other machines and resources to get data on which the decisions are based.
@@ -278,12 +295,17 @@ The shown digital twin proves it is easy to connect to different robots when the
 Through the possibility of an remote connection to the different data connector is with this setup possible to monitor the robot system from all over the world.
 
 \begin{thebibliography}{00}
+\bibitem{SotaCAN}Chan, K.W., Mahyuddin, M.N., Khoo, B.E. (2021). Network-Based Cooperative Synchronization Control of 3 Articulated Robotic Arms for Industry 4.0 Application. In: Md Zain, Z., et al. Proceedings of the 11th National Technical Seminar on Unmanned System Technology 2019 . NUSYS 2019. Lecture Notes in Electrical Engineering, vol 666. Springer, Singapore. https://doi.org/10.1007/978-981-15-5281-6\_30
+\bibitem{SotaROS}U. U. S. K. Rajapaksha, C. Jayawardena and B. A. MacDonald, "ROS Based Heterogeneous Multiple Robots Control Using High Level User Instructions," TENCON 2021 - 2021 IEEE Region 10 Conference (TENCON), Auckland, New Zealand, 2021, pp. 163-168, doi: 10.1109/TENCON54134.2021.9707460.
+\bibitem{StoaROStoOPCUA}A. Tripathy, J. van Deventer, C. Paniagua and J. Delsing, "Interoperability Between ROS and OPC UA: A Local Cloud-Based Approach," 2022 IEEE 5th International Conference on Industrial Cyber-Physical Systems (ICPS), Coventry, United Kingdom, 2022, pp. 1-5, doi: 10.1109/ICPS51978.2022.9816962.
+\bibitem{SotaRaconteur}J. D. Wason and J. T. Wen, "Robot Raconteur®: Updates on an Open Source Interoperable Middleware for Robotics," 2023 IEEE 19th International Conference on Automation Science and Engineering (CASE), Auckland, New Zealand, 2023, pp. 1-8, doi: 10.1109/CASE56687.2023.10260569.
+\bibitem{SotaFusion}Caliskanelli I, Goodliffe M, Whiffin C, Xymitoulias M, Whittaker E, Verma S, Skilton R. Engineering Interoperable, Plug-and-Play, Distributed, Robotic Control Systems for Futureproof Fusion Power Plants. Robotics. 2021; 10(3):108. https://doi.org/10.3390/robotics10030108
 \bibitem{Industry4}Lasi, H., Fettke, P., Kemper, HG. et al. Industry 4.0. Bus Inf Syst Eng 6, 239–242 (2014). https://doi.org/10.1007/s12599-014-0334-4
 \bibitem{CommTechnology} P. Marcon et al., "Communication technology for industry 4.0," 2017 Progress In Electromagnetics Research Symposium - Spring (PIERS), St. Petersburg, Russia, 2017, pp. 1694-1697, doi: 10.1109/PIERS.2017.8262021.
 \bibitem{OPCUA}Open Platform Communication Foundation, Unified Architecture, https://opcfoundation.org/about/opc-technologies/opc-ua/, last checked 09.02.2024.
-\bibitem{ComparOPCUAPaper}Mühlbauer, Nikolas; Kirdan, Erkin; Pahl, Marc-Oliver; Waedt, Karl (2021): Feature-based Comparison of Open Source OPC-UA Implementations. INFORMATIK 2020. DOI: 10.18420/inf2020\_34. Gesellschaft für Informatik, Bonn. PISSN: 1617-5468. ISBN: 978-3-88579-701-2. pp. 367-377. 5th GI/ACM I4.0 Standardization Workshop on Industrial Automation and Control Systems. Karlsruhe. 28. September - 2. Oktober 2020
-\bibitem{open62541}Florian Palm, Sten Gruner, Julius Pfrommer, Markus Graube, Leon Urbas, open62541 – der offene OPC UA Stack, https://publica-rest.fraunhofer.de/server/api/core/bitstreams/d860fd4c-c051-4e71-815b-23c7fc4c2549/content
 \bibitem{CommunicationCommarison} Profanter, Stefan, Tekat, Ayhun, Dorofeev, Kirill, Rickert, Markus, Knoll, Alois. (2019). OPC UA versus ROS, DDS, and MQTT: Performance Evaluation of Industry 4.0 Protocols. 10.1109/ICIT.2019.8755050. 
+\bibitem{open62541}Florian Palm, Sten Gruner, Julius Pfrommer, Markus Graube, Leon Urbas, open62541 – der offene OPC UA Stack, https://publica-rest.fraunhofer.de/server/api/core/bitstreams/d860fd4c-c051-4e71-815b-23c7fc4c2549/content
+\bibitem{ComparOPCUAPaper}Mühlbauer, Nikolas; Kirdan, Erkin; Pahl, Marc-Oliver; Waedt, Karl (2021): Feature-based Comparison of Open Source OPC-UA Implementations. INFORMATIK 2020. DOI: 10.18420/inf2020\_34. Gesellschaft für Informatik, Bonn. PISSN: 1617-5468. ISBN: 978-3-88579-701-2. pp. 367-377. 5th GI/ACM I4.0 Standardization Workshop on Industrial Automation and Control Systems. Karlsruhe. 28. September - 2. Oktober 2020
 \bibitem{KortexUDP} Kinova Robotics Inc., Kortex TransportClient classes, https://docs.\\kinovarobotics.com/kortex/linked\_md/cpp\_transport\_router\_session\_\\notif.html\#transportclient-classes, last checked 08.02.2024.
 \bibitem{SLAKurven} Clearpath. Husky A200 UGV User Manual. url: https://clearpathrobotics.com/husky-documentation/ last checked 21. 10. 2023.
 \end{thebibliography}
