@@ -122,7 +122,9 @@ On the other hand there is FreeOpcUa as an very easy to use python library.
 Its performance might not be as good as the C-library but with a powerful PC it isn't the limiting factor and can also be used.\\
 The architecture of OPC-UA with an standard between all servers and clients makes it perfect for building a decentralized and interoperable network.
 It is easy to have multiple servers and clients in one network and every client can talk to every server simultaneously.
-This makes the network very flexible.
+This makes the network very flexible.\\
+
+Another feature of OPC-UA is the support for multiple security critical functionalities like session encryption, message signing and authentication. \cite{OPCUA}
 \section{Development of the data connector}
 Depending on the robot it might be possible to install software on it.
 If this is the case there is no need for additional Hardware.
@@ -253,6 +255,7 @@ But the the new SoC estimation is much more precise than the old one and an unde
 \section{Digital twin}
 The digital twin is build in Isaac Sim.
 This is a simulation tool for robots and part of the NVIDIA Omniverse.
+Isaac Sim works with usd files but there are native tools to convert other file types like urdf to usd so most robots can be easily imported.\\
 In order to be able to connect to the OPC-UA server, a client is needed.
 The best way to implement this is via an extension for Isaac Sim.
 To reflect the modularity of the robot system and the decentralized network approach, multiple different configurations of the robot system are created.
@@ -287,6 +290,8 @@ To achieve this a special Sim Card for the router is needed.
 It has to have an public IP-Address. For Sim Cards this is not common.
 Normally they get their Messages like push notification via a Google or Apple server.
 Without an public IP-Address it is not possible to reach the VPN server.
+Alternately a software like ngrok can be used to to make a tunnel to the data connector. Therefore no public IP-Address is needed but for every data connector a separate tunnel is required.
+\section{Discussion}
 \section{Conclusion}
 It could be shown in this paper that it is possible to create an decentralized and interoperable network using the OPC-UA standard.
 Furthermore with the data connector the whole setup is very flexible and can be added to every Kinova robot arm using the Kortex API.
