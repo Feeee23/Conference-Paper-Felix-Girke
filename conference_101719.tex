@@ -11,38 +11,71 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Felix Paper Title*}
+\title{Systems of Digital Twins and Physical Systems: Interoperability, Decentralization, and Mobility in Robotic Applications}
 
 \author{\IEEEauthorblockN{Felix Girke}
-\IEEEauthorblockA{\textit{Computer Science and Engineering} \\
-\textit{Frankfurt University of Applied Science}\\
-Frankfurt, Germany \\
+\IEEEauthorblockA{\textit{Dept. of Comp. Science \& Engineering} \\
+\textit{Frankfurt University of Applied Sciences}\\
+Frankfurt a.M., Germany \\
 https://orcid.org/0009-0004-3967-6750}
 \and
-\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
+\IEEEauthorblockN{René Harmann}
+\IEEEauthorblockA{\textit{Dept. of Comp. Science \& Engineering} \\
+\textit{Frankfurt University of Applied Sciences}\\
+Frankfurt a.M., Germany \\
+rene.harmann@fb2.fra-uas.de}
 \and
-\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
+\IEEEauthorblockN{Eric Guiffo Kaigom}
+\IEEEauthorblockA{\textit{Dept. of Comp. Science \& Engineering} \\
+\textit{Frankfurt University of Applied Sciences}\\
+Frankfurt a.M., Germany \\
+kaigom@fb2.fra-uas.de}
 }
 
 \maketitle
 
 \begin{abstract}
-To solve the problem of different interfaces for different robots a data connector is developed.
-It creates a interoperable, decentralized network for a robot system using the Open Platform Communication Unified Architecture (OPC-UA) standard.
-Using this network a flexible digital twin is created in Isaac Sim to visualize the data of the robot system.
-To monitor the robot system from everywhere the possibility of an remote access to the data connectors is set up.
+Whereas digital twins are receiving an increasing
+attention, their implementation has been predominated by mono-
+lithic and static solutions. A resulting issue is the lack of a
+modular integration and seamless interplay of digital twins when
+it comes to adapt and support varying industrial and societal
+applications. Another drawback arises from limited services that
+digital twins can provide as the physical system is extended
+with new components and/or separated from constituting parts,
+giving rise to a metamorphosic system of systems. Furthermore,
+the respective mobility of physical systems and citizens assumed
+to interact with them via their digital surrogates is hardly
+transformed into industrial and societal opportunities, such as
+a pervasive and itinerant human-robot-interaction ($\pi$-HRC).
+Within the scope of our Metarobotics framework that propels
+$\pi$-HRC, we address these challenges by leveraging on the OPC
+UA standard to develop portable data connectors that move
+with and give access to the data source, which is the associated
+physical system. Our Raspberry-Pi driven connector encapsulates
+a digital twin of the corresponding system and its offered services
+to capture the loose coupling and decentralization of systems
+and systems even remotely and in motion. Each data connector
+semantically interoperates with any OPC UA capable system
+and device via wireless communication. This opens up new
+opportunities for different monitoring (and control) modalities
+of large scale systems whose physical or/and virtual constituting
+subsystems are distributed across distinct geographical locations
+in the industrial and societal realm. We apply our framework
+to a mobile multi-arm robotic system with edge-computing
+capabilities and demonstrate the performance of its monitoring
+functionality from the cabin of a moving train in city traffics
+in practice. We provide experimental measurements results and
+highlight the usefulness and effectiveness of our approach.
+% To solve the problem of different interfaces for different robots a data connector is developed.
+% It creates a interoperable, decentralized network for a robot system using the Open Platform Communication Unified Architecture (OPC-UA) standard.
+% Using this network a flexible digital twin is created in Isaac Sim to visualize the data of the robot system.
+% To monitor the robot system from everywhere the possibility of an remote access to the data connectors is set up.
 \end{abstract}
 
 \begin{IEEEkeywords}
-OPC-UA, interoperable, decentralized, digital Twin, Isaac Sim, remote access
+Robotics, Digital Twins, System of Systems, Industry 4.0, Industry 5.0, Society 5.0, Human-Robot-Interaction
+% OPC-UA, interoperable, decentralized, digital Twin, Isaac Sim, remote access
 \end{IEEEkeywords}
 
 \section{Introduction}
