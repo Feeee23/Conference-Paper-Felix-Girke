@@ -235,6 +235,11 @@ INPUT ./Pictures/DigitalerTwinNachgestellt2.png
 INPUT ./Pictures/DigitalerTwinNachgestellt2.png
 INPUT ./Pictures/DigitalerTwinNachgestellt2.png
 INPUT ./Pictures/DigitalerTwinNachgestellt2.png
+INPUT /home/felix/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /home/felix/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /home/felix/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /home/felix/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /home/felix/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT ./Pictures/ZugZugriff.png
 INPUT ./Pictures/ZugZugriff.png
 INPUT ./Pictures/ZugZugriff.png
@@ -253,8 +258,14 @@ INPUT /home/felix/.miktex/texmfs/install/tex/latex/psnfss/ts1ptm.fd
 INPUT /home/felix/.miktex/texmfs/install/tex/latex/psnfss/ts1ptm.fd
 INPUT /home/felix/.miktex/texmfs/install/tex/latex/psnfss/ts1ptm.fd
 INPUT /home/felix/.miktex/texmfs/install/fonts/tfm/adobe/times/ptmr8c.tfm
+INPUT /home/felix/.miktex/texmfs/install/fonts/vf/adobe/times/ptmri7t.vf
+INPUT /home/felix/.miktex/texmfs/install/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT /home/felix/.miktex/texmfs/install/fonts/vf/adobe/times/ptmr8c.vf
+INPUT /home/felix/.miktex/texmfs/install/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /home/felix/.miktex/texmfs/install/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT conference_101719.aux
+INPUT /home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb
 INPUT /home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb
 INPUT /home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmb8a.pfb
