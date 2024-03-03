@@ -1,10 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2023.9.22)  2 MAR 2024 21:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.8)  3 MAR 2024 08:40
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/felix/Documents/Studium/uni UAS/Masterarbeit/Paper/Conference-LaTeX-template_10-17-19/conference_101719.tex"
-(/home/felix/Documents/Studium/uni UAS/Masterarbeit/Paper/Conference-LaTeX-template_10-17-19/conference_101719.tex
+**./conference_101719.tex
+(conference_101719.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
 (IEEEtran.cls
@@ -18,8 +17,9 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmpcountB=\count186
 \@IEEEtrantmpcountC=\count187
 \@IEEEtrantmptoksA=\toks17
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 503.
-(/home/felix/.miktex/texmfs/install/tex/latex/psnfss/ot1ptm.fd
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
+03.
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -33,42 +33,52 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 \IEEEquantizedlength=\dimen147
 \IEEEquantizedlengthdiff=\dimen148
 \IEEEquantizedtextheightdiff=\dimen149
@@ -105,25 +115,29 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEtranrubishbin=\box52
 )
 ** ATTENTION: Overriding command lockouts (line 2).
-(/home/felix/.miktex/texmfs/install/tex/latex/cite/cite.sty
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
-) (/home/felix/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
+)
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(/home/felix/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
- (/home/felix/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
+
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen164
-)) (/home/felix/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
+))
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen165
-) (/home/felix/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
+)
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count266
@@ -173,20 +187,25 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (/home/felix/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
+)
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/home/felix/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/home/felix/.miktex/texmfs/install/tex/latex/algorithms/algorithmic.sty
+))
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithmic.
+sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
- (/home/felix/.miktex/texmfs/install/tex/latex/base/ifthen.sty
+ (C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
-) (/home/felix/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
+)
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks23
 )
@@ -196,30 +215,38 @@ Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \c@ALC@depth=\count281
 \ALC@tlm=\skip54
 \algorithmicindent=\skip55
-) (/home/felix/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
+)
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (/home/felix/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
+
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (/home/felix/.miktex/texmfs/install/tex/latex/graphics/trig.sty
+
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (/home/felix/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+)
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
- (/home/felix/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
+
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen173
 \Gin@req@width=\dimen174
-) (/home/felix/.miktex/texmfs/install/tex/latex/base/textcomp.sty
+) (C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-) (/home/felix/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
+)
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
- (/home/felix/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
+
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
- (/home/felix/.miktex/texmfs/install/tex/latex/graphics/mathcolor.ltx)
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
 Package xcolor Info: Model `RGB' extended on input line 1369.
@@ -229,7 +256,9 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-) (/home/felix/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+)
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count282
 \l__pdf_internal_box=\box55
@@ -252,7 +281,9 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 
 -- Lines per column: 56 (exact).
-(/home/felix/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count283
 \scratchdimen=\dimen175
@@ -265,288 +296,216 @@ LaTeX Font Info:    ... okay on input line 12.
 \MPnumerator=\count287
 \makeMPintoPDFobject=\count288
 \everyMPtoPDFconversion=\toks25
-) (/home/felix/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+)
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/home/felix/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
- (/home/felix/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
+
+ (C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
- (/home/felix/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
+
+
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <Pictures/TitelBild.png, id=1, 825.83531pt x 627.84563pt>
 File: Pictures/TitelBild.png Graphic file (type png)
 <use Pictures/TitelBild.png>
-Package pdftex.def Info: Pictures/TitelBild.png  used on input line 85.
+Package pdftex.def Info: Pictures/TitelBild.png  used on input line 84.
 (pdftex.def)             Requested size: 253.22934pt x 192.51291pt.
-
-Underfull \hbox (badness 4229) in paragraph at lines 92--96
-[]\OT1/ptm/m/n/10 To address these challenges, we have developed a
- []
-
-
-Underfull \hbox (badness 2245) in paragraph at lines 92--96
-\OT1/ptm/m/n/10 data connector (DC) that leverages the Open Platform
- []
-
-
-Underfull \hbox (badness 1418) in paragraph at lines 92--96
-\OT1/ptm/m/n/10 physical counterpart only, instead of the whole system.
- []
-
-
-Underfull \hbox (badness 2818) in paragraph at lines 92--96
-\OT1/ptm/m/n/10 Benefits include the composability and decomposability
- []
-
 
 Underfull \vbox (badness 1735) has occurred while \output is active []
 
- [1{/home/felix/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map}{/home/felix/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}
+ [1{C:/Users/felix/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/f
+elix/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
  <./Pictures/TitelBild.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 129--132
+Underfull \hbox (badness 10000) in paragraph at lines 128--131
 
  []
 
 <Pictures/PiGehaeuseVorne.jpeg, id=13, 537.50812pt x 630.85687pt>
 File: Pictures/PiGehaeuseVorne.jpeg Graphic file (type jpg)
 <use Pictures/PiGehaeuseVorne.jpeg>
-Package pdftex.def Info: Pictures/PiGehaeuseVorne.jpeg  used on input line 134.
+Package pdftex.def Info: Pictures/PiGehaeuseVorne.jpeg  used on input line 133.
+
 (pdftex.def)             Requested size: 118.78526pt x 139.41832pt.
 <Pictures/PiAmKinova.jpeg, id=14, 806.26219pt x 863.47594pt>
 File: Pictures/PiAmKinova.jpeg Graphic file (type jpg)
 <use Pictures/PiAmKinova.jpeg>
-Package pdftex.def Info: Pictures/PiAmKinova.jpeg  used on input line 134.
+Package pdftex.def Info: Pictures/PiAmKinova.jpeg  used on input line 133.
 (pdftex.def)             Requested size: 130.17332pt x 139.41832pt.
 
 
-pdfTeX warning: pdflatex (file ./Pictures/dataConectorStructure.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex.exe (file ./Pictures/dataConectorStructure.pdf): PDF i
+nclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <Pictures/dataConectorStructure.pdf, id=15, 231.74579pt x 111.29579pt>
 File: Pictures/dataConectorStructure.pdf Graphic file (type pdf)
 <use Pictures/dataConectorStructure.pdf>
-Package pdftex.def Info: Pictures/dataConectorStructure.pdf  used on input line 142.
+Package pdftex.def Info: Pictures/dataConectorStructure.pdf  used on input line
+ 141.
 (pdftex.def)             Requested size: 231.74521pt x 111.2955pt.
-[2 <./Pictures/PiGehaeuseVorne.jpeg> <./Pictures/PiAmKinova.jpeg>]
-<Pictures/KortexAPISpeed.pdf, id=19, 462.52798pt x 346.89601pt>
+[2 <./Pictures/PiGehaeuseVorne.jpeg> <./Pictures/PiAmKinova.jpeg> <./Pictures/d
+ataConectorStructure.pdf>]
+<Pictures/KortexAPISpeed.pdf, id=28, 462.52798pt x 346.89601pt>
 File: Pictures/KortexAPISpeed.pdf Graphic file (type pdf)
 <use Pictures/KortexAPISpeed.pdf>
-Package pdftex.def Info: Pictures/KortexAPISpeed.pdf  used on input line 166.
+Package pdftex.def Info: Pictures/KortexAPISpeed.pdf  used on input line 165.
 (pdftex.def)             Requested size: 258.92024pt x 194.19691pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--178
+Underfull \hbox (badness 10000) in paragraph at lines 171--177
 
  []
 
-<Pictures/OPCUASpeed1D.pdf, id=20, 462.52798pt x 346.89601pt>
+<Pictures/OPCUASpeed1D.pdf, id=29, 462.52798pt x 346.89601pt>
 File: Pictures/OPCUASpeed1D.pdf Graphic file (type pdf)
 <use Pictures/OPCUASpeed1D.pdf>
-Package pdftex.def Info: Pictures/OPCUASpeed1D.pdf  used on input line 180.
+Package pdftex.def Info: Pictures/OPCUASpeed1D.pdf  used on input line 179.
 (pdftex.def)             Requested size: 258.92024pt x 194.19691pt.
-<Pictures/PingDiagram.pdf, id=21, 462.52798pt x 346.89601pt>
+<Pictures/PingDiagram.pdf, id=30, 462.52798pt x 346.89601pt>
 File: Pictures/PingDiagram.pdf Graphic file (type pdf)
 <use Pictures/PingDiagram.pdf>
-Package pdftex.def Info: Pictures/PingDiagram.pdf  used on input line 187.
+Package pdftex.def Info: Pictures/PingDiagram.pdf  used on input line 186.
 (pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
-<Pictures/OPCUAMultipleDatenAufEinmal.pdf, id=22, 462.52798pt x 346.89601pt>
+<Pictures/OPCUAMultipleDatenAufEinmal.pdf, id=31, 462.52798pt x 346.89601pt>
 File: Pictures/OPCUAMultipleDatenAufEinmal.pdf Graphic file (type pdf)
 <use Pictures/OPCUAMultipleDatenAufEinmal.pdf>
-Package pdftex.def Info: Pictures/OPCUAMultipleDatenAufEinmal.pdf  used on input line 193.
+Package pdftex.def Info: Pictures/OPCUAMultipleDatenAufEinmal.pdf  used on inpu
+t line 192.
 (pdftex.def)             Requested size: 258.92024pt x 194.19691pt.
-[3 <./Pictures/dataConectorStructure.pdf> <./Pictures/KortexAPISpeed.pdf> <./Pictures/OPCUASpeed1D.pdf>]
+[3 <./Pictures/KortexAPISpeed.pdf> <./Pictures/OPCUASpeed1D.pdf>]
 <Pictures/EndladekuvenSLA.png, id=108, 895.09406pt x 588.69937pt>
 File: Pictures/EndladekuvenSLA.png Graphic file (type png)
 <use Pictures/EndladekuvenSLA.png>
-Package pdftex.def Info: Pictures/EndladekuvenSLA.png  used on input line 214.
+Package pdftex.def Info: Pictures/EndladekuvenSLA.png  used on input line 213.
 (pdftex.def)             Requested size: 261.76526pt x 172.16467pt.
 <Pictures/SoCUeberZeit.pdf, id=109, 462.52798pt x 346.89601pt>
 File: Pictures/SoCUeberZeit.pdf Graphic file (type pdf)
 <use Pictures/SoCUeberZeit.pdf>
-Package pdftex.def Info: Pictures/SoCUeberZeit.pdf  used on input line 228.
+Package pdftex.def Info: Pictures/SoCUeberZeit.pdf  used on input line 227.
 (pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
 <Pictures/SpannungUeberZeit.pdf, id=110, 462.52798pt x 346.89601pt>
 File: Pictures/SpannungUeberZeit.pdf Graphic file (type pdf)
 <use Pictures/SpannungUeberZeit.pdf>
-Package pdftex.def Info: Pictures/SpannungUeberZeit.pdf  used on input line 236.
+Package pdftex.def Info: Pictures/SpannungUeberZeit.pdf  used on input line 235
+.
 (pdftex.def)             Requested size: 128.0374pt x 96.02922pt.
 <Pictures/StormUeberZeit.pdf, id=111, 462.52798pt x 346.89601pt>
 File: Pictures/StormUeberZeit.pdf Graphic file (type pdf)
 <use Pictures/StormUeberZeit.pdf>
-Package pdftex.def Info: Pictures/StormUeberZeit.pdf  used on input line 236.
+Package pdftex.def Info: Pictures/StormUeberZeit.pdf  used on input line 235.
 (pdftex.def)             Requested size: 128.0374pt x 96.02922pt.
- [4 <./Pictures/PingDiagram.pdf> <./Pictures/OPCUAMultipleDatenAufEinmal.pdf> <./Pictures/EndladekuvenSLA.png (PNG copy)>]
-Underfull \hbox (badness 1454) in paragraph at lines 255--259
-\OT1/ptm/m/n/10 measured data from physical systems, a remote system
- []
-
-
-Underfull \hbox (badness 3895) in paragraph at lines 261--261
- \OT1/ptm/m/it/10 B. Location-agnostic monitoring of selected systems of
+ [4 <./Pictures/PingDiagram.pdf> <./Pictures/OPCUAMultipleDatenAufEinmal.pdf> <
+./Pictures/EndladekuvenSLA.png (PNG copy)>]
+Underfull \hbox (badness 1454) in paragraph at lines 254--258
+\OT1/ptm/m/n/10 mea-sured data from phys-i-cal sys-tems, a re-mote sys-tem
  []
 
 <Pictures/DigitalerTwinNachgestellt1.JPG, id=174, 2772.60844pt x 2052.9197pt>
 File: Pictures/DigitalerTwinNachgestellt1.JPG Graphic file (type jpg)
 <use Pictures/DigitalerTwinNachgestellt1.JPG>
-Package pdftex.def Info: Pictures/DigitalerTwinNachgestellt1.JPG  used on input line 268.
+Package pdftex.def Info: Pictures/DigitalerTwinNachgestellt1.JPG  used on input
+ line 267.
 (pdftex.def)             Requested size: 115.24303pt x 85.35826pt.
 <Pictures/DigitalerTwinNachgestellt2.png, id=175, 750.55406pt x 481.8pt>
 File: Pictures/DigitalerTwinNachgestellt2.png Graphic file (type png)
 <use Pictures/DigitalerTwinNachgestellt2.png>
-Package pdftex.def Info: Pictures/DigitalerTwinNachgestellt2.png  used on input line 268.
+Package pdftex.def Info: Pictures/DigitalerTwinNachgestellt2.png  used on input
+ line 267.
 (pdftex.def)             Requested size: 132.96373pt x 85.35826pt.
 <Pictures/ZugZugriff.png, id=176, 910.90312pt x 708.39656pt>
 File: Pictures/ZugZugriff.png Graphic file (type png)
 <use Pictures/ZugZugriff.png>
-Package pdftex.def Info: Pictures/ZugZugriff.png  used on input line 278.
+Package pdftex.def Info: Pictures/ZugZugriff.png  used on input line 277.
 (pdftex.def)             Requested size: 253.22934pt x 196.93367pt.
-
-Underfull \hbox (badness 1515) in paragraph at lines 288--289
-[]\OT1/ptm/m/n/10 Compared to the network that was built in [2], the
- []
-
-
-Underfull \hbox (badness 8113) in paragraph at lines 288--289
-\OT1/ptm/m/n/10 in evolving systems of hybrid systems in different
- []
-
-
-Underfull \hbox (badness 2351) in paragraph at lines 288--289
-\OT1/ptm/m/n/10 using smart contract-based transactions. A blockchained
- []
-
-
-Underfull \hbox (badness 1596) in paragraph at lines 288--289
-\OT1/ptm/m/n/10 traceability of the metamorphosis of systems of hybrid
- []
-
-[5 <./Pictures/SoCUeberZeit.pdf> <./Pictures/SpannungUeberZeit.pdf> <./Pictures/StormUeberZeit.pdf> <./Pictures/DigitalerTwinNachgestellt1.JPG> <./Pictures/DigitalerTwinNachgestellt2.png>]
+[5 <./Pictures/SoCUeberZeit.pdf> <./Pictures/SpannungUeberZeit.pdf> <./Pictures
+/StormUeberZeit.pdf> <./Pictures/DigitalerTwinNachgestellt1.JPG> <./Pictures/Di
+gitalerTwinNachgestellt2.png>]
 <Pictures/AufbauBilder.png, id=278, 451.9284pt x 249.5724pt>
 File: Pictures/AufbauBilder.png Graphic file (type png)
 <use Pictures/AufbauBilder.png>
-Package pdftex.def Info: Pictures/AufbauBilder.png  used on input line 291.
+Package pdftex.def Info: Pictures/AufbauBilder.png  used on input line 290.
 (pdftex.def)             Requested size: 253.22934pt x 139.84335pt.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
+12.
 
-Underfull \hbox (badness 4739) in paragraph at lines 302--303
-[]\OT1/ptm/m/n/10 This work has described the development of DCs
- []
-
-
-Underfull \hbox (badness 4608) in paragraph at lines 302--303
-\OT1/ptm/m/n/10 that enable the dynamic formation of a network of
- []
-
-
-Underfull \hbox (badness 7099) in paragraph at lines 312--313
-[]\OT1/ptm/m/n/8 A. Tripathy, J. van Deventer, C. Paniagua and J. Delsing,
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 313.
-(/home/felix/.miktex/texmfs/install/tex/latex/psnfss/ts1ptm.fd
+(C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 2126) in paragraph at lines 313--314
-[]\OT1/ptm/m/n/8 J. D. Wason and J. T. Wen, "Robot Raconteur\TS1/ptm/m/n/8 ®\OT1/ptm/m/n/8 : Updates on
+Underfull \hbox (badness 1715) in paragraph at lines 312--313
+\OT1/ptm/m/n/8 19th In-ter-na-tional Con-fer-ence on Au-toma-tion Sci-ence and 
+En-gi-
  []
 
 
-Underfull \hbox (badness 3386) in paragraph at lines 313--314
-\OT1/ptm/m/n/8 an Open Source Interoperable Middleware for Robotics," 2023
+Underfull \hbox (badness 3240) in paragraph at lines 312--313
+\OT1/ptm/m/n/8 neer-ing (CASE), Auck-land, New Zealand, 2023, pp. 1-8, doi:
  []
 
 
-Underfull \hbox (badness 1824) in paragraph at lines 313--314
-\OT1/ptm/m/n/8 IEEE 19th International Conference on Automation Science and
+Underfull \hbox (badness 1571) in paragraph at lines 315--316
+[]\OT1/ptm/m/n/8 P. Mar-con et al., "Com-mu-ni-ca-tion tech-nol-ogy for in-dus-
+try 4.0,"
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--315
-[]\OT1/ptm/m/n/8 Caliskanelli I, Goodliffe M, Whiffin C, Xymitoulias M,
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
+\OT1/ptm/m/n/8 (PIERS), St. Pe-ters-burg, Rus-sia, 2017, pp. 1694-1697, doi:
  []
 
 
-Underfull \hbox (badness 6461) in paragraph at lines 314--315
-\OT1/ptm/m/n/8 Whittaker E, Verma S, Skilton R. Engineering Interoperable,
+Underfull \hbox (badness 2913) in paragraph at lines 316--317
+[]\OT1/ptm/m/n/8 Open Plat-form Com-mu-ni-ca-tion Foun-da-tion, Uni-fied Ar-chi
+-tec-ture,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--315
-\OT1/ptm/m/n/8 Plug-and-Play, Distributed, Robotic Control Systems for
+Underfull \hbox (badness 10000) in paragraph at lines 317--318
+[]\OT1/ptm/m/n/8 Profanter, Ste-fan, Tekat, Ay-hun, Do-ro-feev, Kir-ill, Rick-e
+rt,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--315
-\OT1/ptm/m/n/8 Futureproof Fusion Power Plants. Robotics. 2021; 10(3):108.
+Underfull \hbox (badness 7012) in paragraph at lines 317--318
+\OT1/ptm/m/n/8 Markus, Knoll, Alois. (2019). OPC UA ver-sus ROS, DDS,
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 316--317
-[]\OT1/ptm/m/n/8 P. Marcon et al., "Communication technology for industry 4.0,"
+Underfull \hbox (badness 3364) in paragraph at lines 317--318
+\OT1/ptm/m/n/8 and MQTT: Per-for-mance Eval-u-a-tion of In-dus-try 4.0 Pro-to-c
+ols.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--317
-\OT1/ptm/m/n/8 (PIERS), St. Petersburg, Russia, 2017, pp. 1694-1697, doi:
- []
-
-
-Underfull \hbox (badness 2913) in paragraph at lines 317--318
-[]\OT1/ptm/m/n/8 Open Platform Communication Foundation, Unified Architecture,
+Underfull \hbox (badness 1796) in paragraph at lines 318--319
+\OT1/ptm/m/n/8 Ur-bas, open62541 { der of-fene OPC UA Stack, https://publica-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 318--319
-[]\OT1/ptm/m/n/8 Profanter, Stefan, Tekat, Ayhun, Dorofeev, Kirill, Rickert,
+\OT1/ptm/m/n/8 rest.fraunhofer.de/server/api/core/bitstreams/d860fd4c-c051-4e71
+-815b-
  []
 
 
-Underfull \hbox (badness 7012) in paragraph at lines 318--319
-\OT1/ptm/m/n/8 Markus, Knoll, Alois. (2019). OPC UA versus ROS, DDS,
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
+[]\OT1/ptm/m/n/8 Clearpath. Husky A200 UGV User Man-ual. url:
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 318--319
-\OT1/ptm/m/n/8 and MQTT: Performance Evaluation of Industry 4.0 Protocols.
- []
-
-
-Underfull \hbox (badness 1796) in paragraph at lines 319--320
-\OT1/ptm/m/n/8 Urbas, open62541 { der offene OPC UA Stack, https://publica-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 319--320
-\OT1/ptm/m/n/8 rest.fraunhofer.de/server/api/core/bitstreams/d860fd4c-c051-4e71-815b-
- []
-
-
-Underfull \hbox (badness 6268) in paragraph at lines 320--321
-[]\OT1/ptm/m/n/8 M[]uhlbauer, Nikolas; Kirdan, Erkin; Pahl, Marc-Oliver; Waedt,
- []
-
-
-Underfull \hbox (badness 1490) in paragraph at lines 320--321
-\OT1/ptm/m/n/8 Implementations. INFORMATIK 2020. DOI: 10.18420/inf2020[]34.
- []
-
-[6 <./Pictures/ZugZugriff.png (PNG copy)> <./Pictures/AufbauBilder.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 322--323
-[]\OT1/ptm/m/n/8 Clearpath. Husky A200 UGV User Manual. url:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 322--323
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
 \OT1/ptm/m/n/8 https://clearpathrobotics.com/husky-documentation/ last checked
- []
-
-
-Underfull \hbox (badness 2197) in paragraph at lines 323--324
-[]\OT1/ptm/m/n/8 Guiffo Kaigom, E. & Ro^^Ymann, J. Value-driven robotic digital
  []
 
 
@@ -560,26 +519,31 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[7
-
-] (conference_101719.aux)
+[6 <./Pictures/ZugZugriff.png (PNG copy)> <./Pictures/AufbauBilder.png>]
+(conference_101719.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4334 strings out of 477183
- 69888 string characters out of 5809538
- 1932807 words of memory out of 5000000
- 25580 multiletter control sequences out of 15000+600000
+ 4335 strings out of 475246
+ 70460 string characters out of 5757771
+ 1935801 words of memory out of 5000000
+ 25823 multiletter control sequences out of 15000+600000
  594794 words of font info for 107 fonts, out of 8000000 for 9000
- 0 hyphenation exceptions out of 8191
- 57i,8n,65p,995b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/felix/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmb8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmbi8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></home/felix/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (7 pages, 8884425 bytes).
+ 1141 hyphenation exceptions out of 8191
+ 57i,8n,65p,909b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/felix/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmmi9.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX/fonts/type1/ur
+w/times/utmb8a.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX/fonts/type1/ur
+w/times/utmbi8a.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX/fonts/type1/u
+rw/times/utmr8a.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX/fonts/type1/u
+rw/times/utmri8a.pfb>
+Output written on conference_101719.pdf (6 pages, 8884265 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
+ 309 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
