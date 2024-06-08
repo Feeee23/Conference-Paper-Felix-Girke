@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.8)  14 MAR 2024 15:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.8)  8 JUN 2024 12:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -318,13 +318,13 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
 (C:\Users\felix\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Pictures/TitelBild.png, id=1, 825.83531pt x 627.84563pt>
+<Pictures/TitelBild.png, id=1, 825.83531pt x 542.025pt>
 File: Pictures/TitelBild.png Graphic file (type png)
 <use Pictures/TitelBild.png>
 Package pdftex.def Info: Pictures/TitelBild.png  used on input line 84.
-(pdftex.def)             Requested size: 253.22934pt x 192.51291pt.
+(pdftex.def)             Requested size: 253.22934pt x 166.1982pt.
 
-Underfull \vbox (badness 1735) has occurred while \output is active []
+Underfull \vbox (badness 3568) has occurred while \output is active []
 
  [1{C:/Users/felix/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/f
 elix/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
@@ -424,11 +424,11 @@ File: Pictures/DigitalerTwinNachgestellt2.png Graphic file (type png)
 Package pdftex.def Info: Pictures/DigitalerTwinNachgestellt2.png  used on input
  line 267.
 (pdftex.def)             Requested size: 132.96373pt x 85.35826pt.
-<Pictures/ZugZugriff.png, id=176, 910.90312pt x 708.39656pt>
+<Pictures/ZugZugriff.png, id=176, 910.90312pt x 560.8453pt>
 File: Pictures/ZugZugriff.png Graphic file (type png)
 <use Pictures/ZugZugriff.png>
 Package pdftex.def Info: Pictures/ZugZugriff.png  used on input line 277.
-(pdftex.def)             Requested size: 253.22934pt x 196.93367pt.
+(pdftex.def)             Requested size: 253.22934pt x 155.91454pt.
 [5 <./Pictures/SoCUeberZeit.pdf> <./Pictures/SpannungUeberZeit.pdf> <./Pictures
 /StormUeberZeit.pdf> <./Pictures/DigitalerTwinNachgestellt1.JPG> <./Pictures/Di
 gitalerTwinNachgestellt2.png>]
@@ -519,7 +519,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6 <./Pictures/ZugZugriff.png (PNG copy)> <./Pictures/AufbauBilder.png>]
+[6 <./Pictures/ZugZugriff.png> <./Pictures/AufbauBilder.png>]
 (conference_101719.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
@@ -528,12 +528,12 @@ L3 programming layer <2023-08-29>
  ) 
 Here is how much of TeX's memory you used:
  4335 strings out of 475246
- 70460 string characters out of 5757771
- 1935801 words of memory out of 5000000
+ 70433 string characters out of 5757771
+ 1936801 words of memory out of 5000000
  25823 multiletter control sequences out of 15000+600000
  594794 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,8n,65p,909b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,8n,65p,1162b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/felix/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmmi10.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmmi9.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX/fonts/type1/ur
@@ -541,9 +541,9 @@ w/times/utmb8a.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX/fonts/type1/ur
 w/times/utmbi8a.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX/fonts/type1/u
 rw/times/utmr8a.pfb><C:/Users/felix/AppData/Local/Programs/MiKTeX/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (6 pages, 9420101 bytes).
+Output written on conference_101719.pdf (6 pages, 9325251 bytes).
 PDF statistics:
- 309 PDF objects out of 1000 (max. 8388607)
+ 310 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
